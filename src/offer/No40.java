@@ -2,6 +2,11 @@ package offer;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.regex.Pattern;
+
 public class No40 {
     /*
     输入整数数组 arr ，
@@ -10,29 +15,79 @@ public class No40 {
     则最小的4个数字是1、2、3、4。
      */
     public int[] getLeastNumbers(int[] arr, int k) {
-        int[] result = new int[k];
-        for (int i = 0; i < k; i++) {
-            result[i] = arr[0];
+        if (arr.length == 0 || k == 0) {
+            return new int[]{};
         }
-        for (int i : arr) {
-            for (int j = 0; j < k; j++) {
-                if (i < result[j]) {
-                    for (int l = k - 1; l > j; l--) {
-                        result[l] = result[l - 1];
-                    }
-                    result[j] = i;
-                    break;
-                }
+
+        //大顶堆的方法
+//        Queue<Integer> queue = new PriorityQueue<>((a,b)->(b-a));
+//        for (int i : arr) {
+//            if (queue.size()<k){
+//                queue.offer(i);
+//            }else{
+//                if (queue.peek()>i){
+//                    queue.poll();
+//                    queue.offer(i);
+//                }
+//            }
+//        }
+//
+//        int[] result = new int[queue.size()];
+//        int i =0;
+//        for (Integer integer : queue) {
+//            result[i] = integer;
+//            i++;
+//        }
+//
+//        return result;
+
+        //快排的方法
+        int lo = 0;
+        int hi = arr.length-1;
+
+        partition(arr, lo, hi, k);
+
+        return Arrays.copyOf(arr, k);
+    }
+
+    public void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public void partition(int[] arr, int lo, int hi, int k) {
+        int lborder = lo;
+        int rborder = hi;
+        int x = arr[lo];
+        while (lo < hi) {
+            while (x <= arr[hi]&&lo<hi) {
+                hi--;
             }
+            //此时，arr[hi]<x
+            swap(arr, lo, hi);
+
+            while (arr[lo] <= x&&lo<hi) {
+                lo++;
+            }
+            swap(arr, hi, lo);
+            //此时基准点x位于lo
         }
-        return result;
+
+        //此时，lo=hi
+        if (lo == k-1) {
+            //刚刚好
+            return;
+        } else if (lo < k) {
+            partition(arr, lo + 1, rborder, k);
+        } else {
+            //k<lo
+            partition(arr, lborder, lo - 1, k);
+        }
     }
 
     @Test
     public void test() {
-        int[] ints = getLeastNumbers(new int[]{1, 2, 3, 4, 5, 6}, 3);
-        for (int anInt : ints) {
-            System.out.println(anInt);
-        }
+        getLeastNumbers(new int[]{3,2,1},2);
     }
 }

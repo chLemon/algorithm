@@ -1,4 +1,4 @@
-package offer.zhousai82;
+package zhousai82;
 
 public class No1 {
     /*

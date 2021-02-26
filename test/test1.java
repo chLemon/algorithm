@@ -1,7 +1,10 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-@Test
+
 public class test1 {
+    @Test
+    public void test1(){
 
+    }
 
 }

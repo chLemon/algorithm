@@ -1,9 +1,10 @@
 package weeklycontest.no202;
 
-import org.junit.Test;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.junit.Test;
+
 
 public class No4 {
     Map<Integer, Integer> map = new HashMap();

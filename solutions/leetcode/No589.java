@@ -1,6 +1,8 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -57,14 +59,23 @@ public class No589 {
 	
 	// 迭代
 	public List<Integer> preorder2(Node root) {
-		if (root == null) {
-			return new ArrayList<>();
-		}
 
 		List<Integer> res = new ArrayList<>();
-		preorder(root, res);
+		if (root == null) {
+			return res;
+		}
 
+		Deque<Node> stack = new ArrayDeque<Node>();
+		stack.push(root);
+		while (!stack.isEmpty()) {
+			Node node = stack.pop();
+			res.add(node.val);
+			for (int i = node.children.size() - 1; i >= 0; --i) {
+				stack.push(node.children.get(i));
+			}
+		}
 		return res;
+
 	}
 
 @Test

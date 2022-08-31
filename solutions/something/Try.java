@@ -1,6 +1,7 @@
 package something;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
@@ -15,6 +16,7 @@ public class Try {
 			mouseRun();
 		}
 		System.out.println("res平均值为" + res.stream().reduce(Integer::sum).orElse(0) * 1.0 / res.size());
+		System.out.println("res最大值为" + res.stream().max(Comparator.comparingInt(o -> o)));
 		// 输出 16
 	}
 

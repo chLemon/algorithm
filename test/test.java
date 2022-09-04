@@ -1,12 +1,9 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.Test;
 
@@ -14,14 +11,11 @@ public class test {
 
     @Test
     public void test() {
-        List<Long> tes1 = new ArrayList<>();
-        tes1.add(1000000000L);
-        tes1.add(1000000001L);
-        tes1.add(100000002L);
-        tes1.add(10000003L);
+        UserOnlyBrokerIdDTO d1 = new UserOnlyBrokerIdDTO(1L, 1L);
+        UserOnlyBrokerIdDTO d2 = new UserOnlyBrokerIdDTO(2L, 1L);
+        List<UserOnlyBrokerIdDTO> list = Arrays.asList(d1, d2);
+        Map<Long, Set<Long>> map = list.stream().collect(Collectors.groupingBy(UserOnlyBrokerIdDTO::getBrokerId, Collectors.mapping(UserOnlyBrokerIdDTO::getUserId, Collectors.toSet())));
+        System.out.println(map);
 
-
-        Long aLong = new Long("1000000000");
-        System.out.println(tes1.contains(aLong));
     }
 }

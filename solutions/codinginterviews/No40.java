@@ -3,6 +3,8 @@ package codinginterviews;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class No40 {
     /*
@@ -17,7 +19,7 @@ public class No40 {
         }
 
         //大顶堆的方法
-//        Queue<Integer> queue = new PriorityQueue<>((a,b)->(b-a));
+//        Queue<Integer> queue = new PriorityQueue<>((a, b)->(b-a));
 //        for (int i : arr) {
 //            if (queue.size()<k){
 //                queue.offer(i);

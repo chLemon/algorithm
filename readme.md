@@ -2,14 +2,16 @@
 
 ## 目录结构说明
 
+用maven方便引入一些工具类
+
+在test里用Junit方便运行
 ```
-—notes:  学习和练习算法时留下的笔记
-—solution:  解题时写的代码
-    |——leetcode:  LeetCode上的题目
-    |——codinginterviews:  剑指offer上的题目
-    |——weeklycontest:  LeetCode周赛的题目
-    |——biweeklycontest:  LeetCode双周赛的题目
-    |——other:  其他一些乱七八糟的文件
-—test:  解题时用到的测试类
+—src/test/notes    笔记
+—src/test/java     题解
+    |--leetcode            LeetCode
+    |--codinginterviews    剑指offer
+    |--interview_template  OA模板
+    |--temp                其他随手写的东西
+    |--util                工具类
 ```
 

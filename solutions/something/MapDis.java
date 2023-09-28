@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MapDis {
-    static int l = 61;
-    static int n = 15;
+    static int l = 11;
+    static int n = 3;
     static int mid = l / 2;
 
     public static void main(String[] args) {
@@ -46,7 +46,6 @@ public class MapDis {
             System.out.println("最大的概率是：");
             System.out.println(result[5]);
         }
-
     }
 
     private static BigDecimal[] cal(Point[][] p) {

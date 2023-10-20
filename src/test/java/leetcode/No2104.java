@@ -1,9 +1,9 @@
 package leetcode;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
-
-import org.junit.Test;
 
 public class No2104 {
 

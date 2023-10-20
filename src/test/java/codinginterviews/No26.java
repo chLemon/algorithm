@@ -1,7 +1,7 @@
 package codinginterviews;
 
 import codinginterviews.domain.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Definition for a binary tree node.

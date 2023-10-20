@@ -1,6 +1,6 @@
 package codinginterviews;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class No44 {
     public int findNthDigit(int n) {

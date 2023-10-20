@@ -1,6 +1,6 @@
 package leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class No213 {
     public int rob(int[] nums) {

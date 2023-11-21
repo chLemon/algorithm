@@ -2,6 +2,23 @@ package leetcode;
 
 public class No203 {
 
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+    
     public ListNode removeElements(ListNode head, int val) {
         ListNode virtualHead = new ListNode(0, head);
         // 遍历，移除val相等的节点
@@ -35,22 +52,5 @@ public class No203 {
         }
         return dummy.next;
     }
-}
 
-// Definition for singly-linked list.
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
 }

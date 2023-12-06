@@ -1,14 +1,12 @@
 package temp;
 
-import org.junit.jupiter.api.Test;
-
-public class CommonTest {
+public class Test {
 
     public static double f(int n, int k) {
         return Math.pow(2, n - k) + (n - k - 1) * Math.pow(2, n - k - 2);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void test() {
         helper(4, 4);
         helper(5, 2);

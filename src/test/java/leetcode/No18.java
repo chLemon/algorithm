@@ -13,7 +13,6 @@ public class No18 {
     }
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        // 四个指针 On^3试试行不行
         List<List<Integer>> res = new ArrayList<>();
         if (nums == null || nums.length < 4) {
             return res;
@@ -21,7 +20,17 @@ public class No18 {
 
         Arrays.sort(nums);
         for (int a = 0; a < nums.length; a++) {
+            // 可以剪枝，但是要注意条件，得nums[a] > 0 如 -3 -2 -1 ... target = -4，-3>-4时还是可以继续加的
+            if (nums[a] > 0 && nums[a] > target) {
+                return res;
+            }
             for (int b = a + 1; b < nums.length; b++) {
+                // 二级剪枝，注意
+                if (nums[a] + nums[b] > target && nums[a] + nums[b] > 0) {
+                    // 如果不用return还得用label
+                    return res;
+                }
+                // 还可以写成 nums[b] > 0 ，因为当 nums[a] + nums[b] > target时，需要后续2个数让这个和变小，但是如果nums[b]>0，后面都是正数，只能让这个和变大了
                 int c = b + 1;
                 int d = nums.length - 1;
                 while (c < d) {

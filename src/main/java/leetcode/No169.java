@@ -1,7 +1,5 @@
 package leetcode;
 
-import org.junit.jupiter.api.Test;
-
 public class No169 {
 //    public int majorityElement(int[] nums) {
 //        int lo = 0;
@@ -49,7 +47,6 @@ public class No169 {
         return count;
     }
 
-    @Test
     public void test() {
         int i = majorityElement(new int[]{
                 2, 2, 1, 1, 1, 2, 2

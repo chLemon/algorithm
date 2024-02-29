@@ -1,7 +1,5 @@
 package leetcode;
 
-import org.junit.jupiter.api.Test;
-
 public class No300 {
     /*
     给定一个无序的整数数组，
@@ -34,7 +32,6 @@ public class No300 {
 return 0;
     }
 
-    @Test
     public void test() {
         int i = lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
         int i2 = lengthOfLIS(new int[]{4, 10, 4, 3, 8, 9});

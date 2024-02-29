@@ -3,8 +3,6 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-
 public class No3 {
 
 	public int lengthOfLongestSubstring(String s) {
@@ -23,7 +21,6 @@ public class No3 {
 		return Math.max(max, j - i);
 	}
 
-	@Test
 	public void  test() {
 		lengthOfLongestSubstring("abcabcbb");
 	}

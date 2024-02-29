@@ -66,7 +66,6 @@ public class No6 {
 	}
 
 
-	@Test
 	public void test() {
 		String s = convert("PAYPALISHIRING", 3);
 		System.out.println(s);

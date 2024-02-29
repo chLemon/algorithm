@@ -1,9 +1,6 @@
 package leetcode;
 
-import org.junit.jupiter.api.Test;
-
 public class No2055 {
-	@Test
 	public void test() {
 		String s1 = "**|**|***|";
 		int[][] queries1 = new int[][] { { 2, 5 }, { 5, 9 } };

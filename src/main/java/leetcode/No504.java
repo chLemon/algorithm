@@ -34,7 +34,6 @@ public class No504 {
 	}
 
 
-	@Test
 	public void test() {
 		String s1 = convertToBase7(100);
 		System.out.println(s1);

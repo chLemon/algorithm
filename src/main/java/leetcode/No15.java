@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class No15 {
     public static void main(String[] args) {

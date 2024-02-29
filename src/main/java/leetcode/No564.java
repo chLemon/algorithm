@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 
 public class No564 {
 
-	@Test
 	public void test() {
 		String s = nearestPalindromic("100");
 		System.out.println(s);

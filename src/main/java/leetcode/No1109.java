@@ -1,7 +1,5 @@
 package leetcode;
 
-import org.junit.jupiter.api.Test;
-
 public class No1109 {
 
 
@@ -10,7 +8,6 @@ public class No1109 {
 	}
 
 
-	@Test
 	public void test() {
 
 	}

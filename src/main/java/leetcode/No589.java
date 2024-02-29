@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-
 public class No589 {
 
 
@@ -77,7 +75,6 @@ public class No589 {
 
 	}
 
-@Test
 	public void test(){
 		String a = "";
 		swap(a);

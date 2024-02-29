@@ -1,7 +1,5 @@
 package leetcode;
 
-import org.junit.jupiter.api.Test;
-
 public class No213 {
     public int rob(int[] nums) {
         if (nums.length == 0) return 0;
@@ -22,7 +20,6 @@ public class No213 {
         return cur;
     }
 
-    @Test
     public void test() {
         int rob = rob(new int[]{1, 2, 3, 1});
         System.out.println(rob);

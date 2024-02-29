@@ -4,8 +4,14 @@ public class No28 {
 
     public static void main(String[] args) {
         No28 no = new No28();
-        assert no.strStr("sadbutsad", "sad") == 0;
-        assert no.strStr("leetcode", "leeto") == -1;
+        int r1 = no.kmp("sadbutsad", "sad");
+        System.out.println(r1); // 0
+        int r2 = no.kmp("leetcode", "leeto");
+        System.out.println(r2); // -1
+        int r3 = no.kmp("a", "a");
+        System.out.println(r3); // 0
+        int r4 = no.kmp("mississippi", "issip");
+        System.out.println(r4); // 0
     }
 
     // 不考虑KMP，记不住
@@ -28,7 +34,10 @@ public class No28 {
      * KMP
      */
     public int kmp(String haystack, String needle) {
-        int[] next = initNext(needle);
+        if (haystack.length() < needle.length()) {
+            return -1;
+        }
+        int[] next = initNext3(needle);
         int i = 0;
         int j = 0;
         while (i < haystack.length() && j < needle.length()) {
@@ -39,18 +48,55 @@ public class No28 {
                 j = next[j];
             }
         }
-        return i - j < 0 ? -1 : i - j;
+        return j == needle.length() ? i - j : -1;
     }
 
     private int[] initNext(String pattern) {
         int[] next = new int[pattern.length()];
-        next[0] = -1;
-        for (int i = 1; i < pattern.length(); i++) {
-            if (pattern.charAt(i) == pattern.charAt(next[i])) {
-                next[i] = next[next[i + 1]] + 1;
+        int j = next[0] = -1;
+        int i = 1;
+        while (i < pattern.length()) {
+            if (j < 0 || pattern.charAt(i - 1) == pattern.charAt(j)) {
+                next[i++] = ++j;
+            } else {
+                j = next[j];
             }
         }
+        return next;
+    }
 
+    /**
+     * 优化后的版本，其实这边的i从0开始，会更简洁
+     */
+    private int[] initNext2(String pattern) {
+        int[] next = new int[pattern.length()];
+        int j = next[0] = -1;
+        int i = 1;
+        while (i < pattern.length()) {
+            if (j < 0 || pattern.charAt(i - 1) == pattern.charAt(j)) {
+                j++;
+                next[i] = pattern.charAt(j) != pattern.charAt(i) ? j : next[j];
+                i++;
+            } else {
+                j = next[j];
+            }
+        }
+        return next;
+    }
+
+    private int[] initNext3(String pattern) {
+        int[] next = new int[pattern.length()];
+        int j = next[0] = -1;
+        int i = 0;
+        while (i < pattern.length() - 1) {
+            if (j < 0 || pattern.charAt(i) == pattern.charAt(j)) {
+                j++;
+                i++;
+                next[i] = pattern.charAt(j) != pattern.charAt(i) ? j : next[j];
+            } else {
+                j = next[j];
+            }
+        }
         return next;
     }
 }

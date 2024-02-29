@@ -3,8 +3,6 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-
 public class No564 {
 
 	public void test() {

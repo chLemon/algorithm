@@ -5,8 +5,6 @@ import java.util.Deque;
 
 public class No232 {
 
-    Deque
-
 
 }
 

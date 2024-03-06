@@ -6,10 +6,10 @@ import java.util.List;
 public class No144 {
 
     public static void main(String[] args) {
+        No144 no = new No144();
         TreeNode root = new TreeNode(1,
                 null, new TreeNode(2,
                 new TreeNode(3), null));
-        No144 no = new No144();
         System.out.println(no.preorderTraversal(root));
     }
 
@@ -29,26 +29,26 @@ public class No144 {
         preorder(node.right, res);
     }
 
+    /**
+     * Definition for a binary tree node.
+     */
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
 }
 
-/**
- * Definition for a binary tree node.
- */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}

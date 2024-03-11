@@ -26,7 +26,7 @@ public class No94 {
     /**
      * Definition for a binary tree node.
      */
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

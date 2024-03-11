@@ -24,7 +24,7 @@ public class No145 {
     }
 
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

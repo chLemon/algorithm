@@ -144,7 +144,7 @@ public class BinaryTree {
     }
 
 
-    static class TreeNode {
+    private static class TreeNode {
         public int val;
         public TreeNode left;
         public TreeNode right;

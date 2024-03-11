@@ -28,7 +28,7 @@ public class No199 {
         return res;
     }
 
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

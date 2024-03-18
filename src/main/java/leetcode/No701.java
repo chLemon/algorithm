@@ -5,8 +5,6 @@ public class No701 {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if (root == null) return new TreeNode(val);
 
-        TreeNode backup = root;
-
         TreeNode pre = null;
         TreeNode cur = root;
         while (cur != null) {
@@ -20,7 +18,7 @@ public class No701 {
             pre.left = new TreeNode(val);
         }
 
-        return backup;
+        return root;
     }
 
     private static class TreeNode {

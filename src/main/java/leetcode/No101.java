@@ -20,7 +20,7 @@ public class No101 {
         return dfs(left.right, right.left) && dfs(left.left, right.right);
     }
 
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

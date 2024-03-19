@@ -17,7 +17,6 @@ public class No701 {
         } else {
             pre.left = new TreeNode(val);
         }
-
         return root;
     }
 

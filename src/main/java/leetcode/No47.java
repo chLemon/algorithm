@@ -26,7 +26,7 @@ public class No47 {
         }
 
         Set<Integer> set = new HashSet<>();
-        // 或者排序后，用 i > 0 && n[i] == n[i-1] && used[i-1] == false
+        // 或者排序后，用 i > 0 && n[i] == n[i-1] && used[i-1] == false 效率更高
         for (int i = 0; i < nums.length; i++) {
             if (used[i] || set.contains(nums[i])) {
                 continue;

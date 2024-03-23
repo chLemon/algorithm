@@ -19,9 +19,22 @@ public class Kama46 {
         String line3 = reader.readLine();
         String[] line3Split = line3.split(" ");
         int[] values = Arrays.stream(line3Split).mapToInt(Integer::valueOf).toArray();
-        System.out.println(pack(M, N, spaces, values));
+        System.out.println(pack2(M, N, spaces, values));
     }
 
+    private static int pack2(int M, int N, int[] spaces, int[] values) {
+        int[] dp = new int[N + 1];
+        for (int i = 0; i < M; i++) {
+            // 这里的j到weight[i]停止就可以了
+            for (int j = N; j > 0; j--) {
+                dp[j] = j >= spaces[i] ?
+                        Math.max(dp[j], dp[j - spaces[i]] + values[i])
+                        : dp[j];
+            }
+        }
+        return dp[N];
+    }
+    
     private static int pack(int M, int N, int[] spaces, int[] values) {
         int[][] dp = new int[M][N + 1];
         // 从spaces[0] 开始遍历就行了
@@ -40,5 +53,6 @@ public class Kama46 {
         }
         return dp[M - 1][N];
     }
+
 
 }

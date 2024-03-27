@@ -2,6 +2,7 @@ package leetcode;
 
 public class No213 {
     public int rob(int[] nums) {
+        // dp数组上包含个0，会好很多
         if (nums.length == 0) return 0;
         if (nums.length == 1) return nums[0];
         int a = helper(nums, 0, nums.length - 1);

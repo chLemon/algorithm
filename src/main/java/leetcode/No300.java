@@ -1,41 +1,28 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public class No300 {
-    /*
-    给定一个无序的整数数组，
-    找到其中最长上升子序列的长度。
-     */
 
-    /*
-    输入: [10,9,2,5,3,7,101,18]
-    输出: 4
-    解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
-     */
-    public int lengthOfLIS(int[] nums) {
-        int[] tails = new int[nums.length];
-
-        int result = 0;
-        for (int num : nums) {
-            int i = 0;
-            int j = result;
-            while (i < j) {
-                int m = (i + j) / 2;
-                if (tails[m]<num){
-                    i=m+1;
-                }else{
-                    
-                }
-
-            }
-
-        }
-return 0;
+    public static void main(String[] args) {
+        No300 no = new No300();
+        no.lengthOfLIS(new int[]{0, 1, 0, 3, 2, 3});
     }
 
-    public void test() {
-        int i = lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
-        int i2 = lengthOfLIS(new int[]{4, 10, 4, 3, 8, 9});
-        System.out.println(i2);
+    public int lengthOfLIS(int[] nums) {
+        // 定义，以nums[i]结尾的最长子序列长度
+        int[] f = new int[nums.length];
+        f[0] = 1;
+        for (int i = 1; i < nums.length; i++) {
+            // f[i] = 前面所有 < num 的长度中的最大值 + 1
+            int num = nums[i];
+            int l = 0;
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < num) l = Math.max(l, f[j]);
+            }
+            f[i] = l + 1;
+        }
+        return Arrays.stream(f).max().orElse(1);
     }
 
 }

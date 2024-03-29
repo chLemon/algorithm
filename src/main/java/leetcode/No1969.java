@@ -14,7 +14,7 @@ public class No1969 {
     public int minNonZeroProduct(int p) {
         // (2^p - 2) ^ (2^(p-1) -1 ) * (2^p - 1)
         long x = fastPow(2, p) - 2;
-        // todo 这里，y不能取模！！！
+        // ！！！！！！！！！！！！！！！！！！！这里，y不能取模！！！！！！！！！！！1
         long y = fastPow(2, p - 1) - 1;
         long z = fastPow(2, p) - 1;
         System.out.println("1  base: " + x + " n: " + y);

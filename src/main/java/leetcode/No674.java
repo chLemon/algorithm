@@ -1,26 +1,37 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public class No674 {
-    /*
-    给定一个未经排序的整数数组，
-    找到最长且连续的的递增序列，
-    并返回该序列的长度。
-     */
+
+    public static void main(String[] args) {
+        No674 no = new No674();
+        no.findLengthOfLCIS(new int[]{1, 3, 5, 7});
+    }
+
     public int findLengthOfLCIS(int[] nums) {
-        int result = 0;
-        if (nums == null || nums.length == 0) {
-            return result;
-        }
-        int temp = 1;
-        result = 1;
+        int maxLength = Integer.MIN_VALUE;
+        int l = 1;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] > nums[i - 1]) {
-                result = ++temp > result ? temp : result;
+                l++;
             } else {
-                temp = 1;
+                maxLength = Math.max(maxLength, l);
+                l = 1;
             }
         }
-        return result;
+        maxLength = Math.max(maxLength, l);
+        return maxLength;
     }
+
+    public int findLengthOfLCIS2(int[] nums) {
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
+        for (int i = 1; i < nums.length; i++) {
+            dp[i] = nums[i] > nums[i - 1] ? dp[i - 1] + 1 : 1;
+        }
+        return Arrays.stream(dp).max().orElse(1);
+    }
+
 
 }

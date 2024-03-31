@@ -1,8 +1,7 @@
 package leetcode;
 
 public class No134 {
-
-
+    
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int f = 0;
         int minF = Integer.MAX_VALUE;

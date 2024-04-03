@@ -13,6 +13,7 @@ public class No1207 {
             Integer frequency = num2Frequency.getOrDefault(num, 0);
             num2Frequency.put(num, frequency + 1);
         }
+        // 这里手动遍历values维护set应该可以节约一点点的复杂度，但是没啥必要吧
         Set<Integer> frequencySet = new HashSet<>(num2Frequency.values());
         return num2Frequency.values().size() == frequencySet.size();
     }

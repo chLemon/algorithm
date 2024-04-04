@@ -9,8 +9,10 @@ public class No35 {
             int mid = start + (end - start) / 2;
             if (nums[mid] < target) {
                 start = mid + 1;
-            } else {
+            } else if (nums[mid] > target) {
                 end = mid;
+            } else {
+                return mid;
             }
         }
         return start;

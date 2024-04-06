@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class No599 {
+class No599 {
 
 
 	public String[] findRestaurant(String[] list1, String[] list2) {

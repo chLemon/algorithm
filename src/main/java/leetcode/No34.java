@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No34 {
+class No34 {
 
     public int[] searchRange(int[] nums, int target) {
         int less = binarySearch(nums, target);

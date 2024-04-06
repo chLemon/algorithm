@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No684 {
+class No684 {
 
     int[] father;
 

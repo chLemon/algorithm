@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No455 {
+class No455 {
 
 
     public int findContentChildren(int[] g, int[] s) {

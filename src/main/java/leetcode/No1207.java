@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class No1207 {
+class No1207 {
 
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> num2Frequency = new HashMap<>();

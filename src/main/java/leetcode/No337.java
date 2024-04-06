@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class No337 {
+class No337 {
 
     // 没准儿还有一个递归加分而治之的做法
     Map<TreeNode, Integer> map = new HashMap<>();

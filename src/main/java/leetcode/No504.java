@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No504 {
+class No504 {
 
 	/**
 	 * 可以优化的地方：

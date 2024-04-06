@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No27 {
+class No27 {
 
     public int removeElement(int[] nums, int val) {
         if (nums.length == 0) {

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1109 {
+class No1109 {
 
 
 	public int[] corpFlightBookings(int[][] bookings, int n) {

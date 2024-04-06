@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No55 {
+class No55 {
 
     // 贪心1
     public boolean canJump(int[] nums) {

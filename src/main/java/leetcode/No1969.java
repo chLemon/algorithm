@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1969 {
+class No1969 {
 
 
     long mod = 1000_000_007L;

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No144 {
+class No144 {
 
     public static void main(String[] args) {
         No144 no = new No144();

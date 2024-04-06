@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No106 {
+class No106 {
 
 
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No225 {
+class No225 {
     public static void main(String[] args) {
         MyStack myStack = new MyStack();
         myStack.push(1);

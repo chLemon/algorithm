@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No198 {
+class No198 {
 
     public int rob(int[] nums) {
         if (nums.length == 1) return nums[0];

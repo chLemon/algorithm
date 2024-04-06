@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No19 {
+class No19 {
 
     // 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
     public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -36,7 +36,7 @@ public class No19 {
     输出：[1]
 
      */
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
 

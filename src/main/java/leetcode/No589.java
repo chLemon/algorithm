@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class No589 {
+class No589 {
 
 
 	// Definition for a Node.

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No707 {
+class No707 {
 
     /*
     实现 MyLinkedList 类：

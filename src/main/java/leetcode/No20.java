@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No20 {
+class No20 {
 
     public static void main(String[] args) {
         No20 no = new No20();

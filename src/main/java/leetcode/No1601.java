@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1601 {
+class No1601 {
 	
 	int[] delta;
 	int ans = 0, cnt = 0, zero, n;

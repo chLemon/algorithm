@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No189 {
+class No189 {
 
     public void rotate(int[] nums, int k) {
         if (nums.length == 1) return;

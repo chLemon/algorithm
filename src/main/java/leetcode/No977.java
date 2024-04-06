@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No977 {
+class No977 {
 
     /*
     示例 1：

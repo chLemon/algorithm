@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No1005 {
+class No1005 {
     public static void main(String[] args) {
         No1005 no = new No1005();
         no.largestSumAfterKNegations(new int[]{3, -1, 0, 2}, 3);

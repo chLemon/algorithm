@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No700 {
+class No700 {
 
     public TreeNode searchBST(TreeNode root, int val) {
         while (root != null && root.val != val) {

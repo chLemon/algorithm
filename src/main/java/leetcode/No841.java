@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No841 {
+class No841 {
 
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         Set<Integer> visited = new HashSet<>();

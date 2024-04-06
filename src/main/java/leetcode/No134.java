@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No134 {
+class No134 {
     
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int f = 0;

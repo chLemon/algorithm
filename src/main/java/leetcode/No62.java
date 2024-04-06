@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No62 {
+class No62 {
 
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];

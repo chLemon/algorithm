@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No84 {
+class No84 {
 
     public static void main(String[] args) {
         No84 no = new No84();

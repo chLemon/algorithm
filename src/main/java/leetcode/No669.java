@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No669 {
+class No669 {
 
 
     public TreeNode trimBST(TreeNode root, int low, int high) {

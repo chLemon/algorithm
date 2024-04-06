@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No40 {
+class No40 {
     public static void main(String[] args) {
         No40 no = new No40();
         no.combinationSum2(new int[]{10, 1, 2, 7, 6, 1, 5}, 8);

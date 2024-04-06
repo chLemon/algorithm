@@ -1,9 +1,9 @@
 package leetcode;
 
-public class No2 {
+class No2 {
 
 	// Definition for singly-linked list.
-	public static class ListNode {
+    private static class ListNode {
 		int val;
 		ListNode next;
 

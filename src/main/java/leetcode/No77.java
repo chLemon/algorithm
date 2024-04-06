@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No77 {
+class No77 {
 
     /*
     给定两个整数 n 和 k，返回范围 [1, n] 中所有可能的 k 个数的组合。

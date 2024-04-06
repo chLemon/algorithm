@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.HashSet;
 import java.util.Set;
 
-public class No150 {
+class No150 {
 
     /*
     

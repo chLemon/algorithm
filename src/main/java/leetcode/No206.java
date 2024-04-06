@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No206 {
+class No206 {
 
     public static void main(String[] args) {
         ListNode test1 = new ListNode(1,

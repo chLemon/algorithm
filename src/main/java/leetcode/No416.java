@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No416 {
+class No416 {
 
     public boolean canPartition(int[] nums) {
         int sum = Arrays.stream(nums).sum();

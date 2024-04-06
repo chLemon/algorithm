@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No283 {
+class No283 {
 
     // 这个题用for写更清晰
     public void moveZeroes(int[] nums) {

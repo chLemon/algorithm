@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class No37 {
+class No37 {
 
     List<Set<Character>> lineSets = new ArrayList<>(9);
     List<Set<Character>> columnSets = new ArrayList<>(9);

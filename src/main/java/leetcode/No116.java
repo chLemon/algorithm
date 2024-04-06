@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No116 {
+class No116 {
     public Node connect(Node root) {
         Queue<Node> queue = new LinkedList<>();
         if (root != null) queue.offer(root);

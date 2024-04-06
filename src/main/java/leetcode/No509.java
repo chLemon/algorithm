@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No509 {
+class No509 {
     public static void main(String[] args) {
         No509 no = new No509();
         no.fib(2);

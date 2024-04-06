@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No122 {
+class No122 {
 
     public int maxProfit(int[] prices) {
         // 可以直接贪心啊

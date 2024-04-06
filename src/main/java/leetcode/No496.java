@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No496 {
+class No496 {
 
     public static void main(String[] args) {
         No496 no = new No496();

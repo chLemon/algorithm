@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1020 {
+class No1020 {
     int m;
     int n;
     boolean[][] visited;

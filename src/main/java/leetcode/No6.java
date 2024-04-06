@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No6 {
+class No6 {
 
 	/**
 	 * 数据量也不大，最简单的当然是直接按照题目意思排一下

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No530 {
+class No530 {
 
 
     int res = Integer.MAX_VALUE;

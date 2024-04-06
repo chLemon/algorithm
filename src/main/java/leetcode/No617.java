@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No617 {
+class No617 {
 
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null && root2 == null) {

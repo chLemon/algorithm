@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No922 {
+class No922 {
 
     public int[] sortArrayByParityII(int[] nums) {
         int findOddInEven = 0;

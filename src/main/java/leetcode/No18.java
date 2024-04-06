@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No18 {
+class No18 {
 
     public static void main(String[] args) {
         No18 no = new No18();

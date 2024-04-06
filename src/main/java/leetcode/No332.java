@@ -5,7 +5,7 @@ import util.JacksonUtil;
 
 import java.util.*;
 
-public class No332 {
+class No332 {
 
     List<String> path = new ArrayList<>();
     Map<String, TreeMap<String, Integer>> start2End = new HashMap<>();

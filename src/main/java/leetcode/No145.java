@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No145 {
+class No145 {
 
 
     public List<Integer> postorderTraversal(TreeNode root) {

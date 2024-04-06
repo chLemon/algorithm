@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No376 {
+class No376 {
     public static void main(String[] args) {
         No376 no = new No376();
         int i = no.wiggleMaxLength(new int[]{1, 2, 2, 3});

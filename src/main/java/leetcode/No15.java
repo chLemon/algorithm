@@ -1,8 +1,10 @@
 package leetcode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class No15 {
+class No15 {
     public static void main(String[] args) {
         No15 no = new No15();
         List<List<Integer>> lists = no.threeSum(new int[]{-1, 0, 1, 2, -1, -4});

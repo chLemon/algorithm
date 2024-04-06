@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No130 {
+class No130 {
 
     public void solve(char[][] board) {
         // 访问边界，所有O改为A

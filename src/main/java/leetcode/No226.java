@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No226 {
+class No226 {
 
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {

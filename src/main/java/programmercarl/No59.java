@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No59 {
+class No59 {
 
     int N;
     int[][] res;

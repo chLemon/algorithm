@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No35 {
+class No35 {
 
     public int searchInsert(int[] nums, int target) {
         int start = 0;

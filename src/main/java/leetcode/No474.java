@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No474 {
+class No474 {
 
     public int findMaxForm(String[] strs, int m, int n) {
         int[] strs0Count = new int[strs.length];

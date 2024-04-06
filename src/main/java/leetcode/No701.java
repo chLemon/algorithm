@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No701 {
+class No701 {
 
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if (root == null) return new TreeNode(val);

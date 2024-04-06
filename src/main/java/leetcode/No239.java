@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No239 {
+class No239 {
 
 
     /*

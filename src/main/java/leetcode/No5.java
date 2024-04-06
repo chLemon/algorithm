@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No5 {
+class No5 {
 
     public static void main(String[] args) {
         No5 no = new No5();

@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No724 {
+class No724 {
 
     public int pivotIndex(int[] nums) {
         int sum = Arrays.stream(nums).sum();

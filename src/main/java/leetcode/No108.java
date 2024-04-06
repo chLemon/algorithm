@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No108 {
+class No108 {
 
     private static class TreeNode {
         int val;

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No404 {
+class No404 {
 
 
     public static void main(String[] args) {

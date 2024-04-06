@@ -1,7 +1,7 @@
 package leetcode;
 
-public class No160 {
-    public static class ListNode {
+class No160 {
+    private static class ListNode {
         int val;
         ListNode next;
 

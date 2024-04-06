@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No516 {
+class No516 {
 
     public int longestPalindromeSubseq(String s) {
         int[][] f = new int[s.length()][s.length()];

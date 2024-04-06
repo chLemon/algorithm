@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1971 {
+class No1971 {
 
     int[] arr;
 

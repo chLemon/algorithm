@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No112 {
+class No112 {
 
 
     /*

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class No406 {
+class No406 {
 
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, (a, b) -> b[0] - a[0] != 0

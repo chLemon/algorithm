@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No1365 {
+class No1365 {
 
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] res = Arrays.copyOf(nums, nums.length);

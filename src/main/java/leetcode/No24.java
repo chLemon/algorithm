@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No24 {
+class No24 {
 
 
     public ListNode swapPairs(ListNode head) {

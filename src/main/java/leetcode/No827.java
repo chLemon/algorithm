@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class No827 {
+class No827 {
 
     int[] dir = new int[]{-1, 0, 1, 0, -1};
 

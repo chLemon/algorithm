@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No200 {
+class No200 {
 
     public static void main(String[] args) {
         No200 no = new No200();

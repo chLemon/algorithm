@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No714 {
+class No714 {
 
     public int maxProfit(int[] prices, int fee) {
         int[][] f = new int[prices.length + 1][2];

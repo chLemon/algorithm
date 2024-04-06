@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No541 {
+class No541 {
 
     public String reverseStr(String s, int k) {
         char[] chars = s.toCharArray();

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class No202 {
+class No202 {
 
     public boolean isHappy(int n) {
         Set<Integer> occurred = new HashSet<>();

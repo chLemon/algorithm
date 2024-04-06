@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No738 {
+class No738 {
 
     public int monotoneIncreasingDigits(int n) {
         // 还可以直接用String，不需要用int[]

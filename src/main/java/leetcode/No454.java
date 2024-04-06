@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No454 {
+class No454 {
 
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         // 暴力On^4，map可以降低一重，如果22分组，则On^2

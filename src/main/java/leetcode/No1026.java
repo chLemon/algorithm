@@ -3,7 +3,7 @@ package leetcode;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class No1026 {
+class No1026 {
 
 
     int res = Integer.MIN_VALUE;
@@ -57,7 +57,7 @@ public class No1026 {
         }
     }
 
-    public class TreeNode {
+    class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

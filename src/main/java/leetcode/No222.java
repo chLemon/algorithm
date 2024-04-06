@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No222 {
+class No222 {
 
     /**
      * 思路1：二分法

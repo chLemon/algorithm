@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No213 {
+class No213 {
     public int rob(int[] nums) {
         // dp数组上包含个0，会好很多
         if (nums.length == 0) return 0;

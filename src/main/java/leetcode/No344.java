@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No344 {
+class No344 {
 
     public void reverseString(char[] s) {
         int i = 0;

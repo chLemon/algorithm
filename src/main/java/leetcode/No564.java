@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No564 {
+class No564 {
 
 	public void test() {
 		String s = nearestPalindromic("100");

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No51 {
+class No51 {
 
     List<List<String>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();

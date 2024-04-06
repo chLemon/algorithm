@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class No637 {
+class No637 {
 
     /*
     树中节点数量在 [1, 10^4] 范围内

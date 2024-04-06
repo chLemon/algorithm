@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No894 {
+class No894 {
 
     public List<TreeNode> allPossibleFBT(int n) {
         List<TreeNode> res = new ArrayList<>();

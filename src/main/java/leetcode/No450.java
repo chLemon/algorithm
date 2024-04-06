@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No450 {
+class No450 {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(5, new TreeNode(3, new TreeNode(2), new TreeNode(4)), new TreeNode(6, null, new TreeNode(7)));

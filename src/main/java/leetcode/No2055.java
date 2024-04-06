@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No2055 {
+class No2055 {
 	public void test() {
 		String s1 = "**|**|***|";
 		int[][] queries1 = new int[][] { { 2, 5 }, { 5, 9 } };

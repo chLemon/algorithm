@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No513 {
+class No513 {
 
 
     public int findBottomLeftValue(TreeNode root) {

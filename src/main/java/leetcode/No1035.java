@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No1035 {
+class No1035 {
 
     public int maxUncrossedLines(int[] nums1, int[] nums2) {
         int[][] f = new int[nums1.length + 1][nums2.length + 1];

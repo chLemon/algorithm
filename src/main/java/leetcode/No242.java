@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No242 {
+class No242 {
 
 
     public boolean isAnagram1(String s, String t) {

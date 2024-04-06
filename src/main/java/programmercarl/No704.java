@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No704 {
+class No704 {
 
     public int search(int[] nums, int target) {
         int start = 0;

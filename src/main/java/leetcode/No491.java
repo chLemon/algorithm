@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No491 {
+class No491 {
 
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();

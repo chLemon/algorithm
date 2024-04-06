@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No98 {
+class No98 {
 
     // 利用上下界
     public boolean isValidBST(TreeNode root) {

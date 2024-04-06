@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class No47 {
+class No47 {
 
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();

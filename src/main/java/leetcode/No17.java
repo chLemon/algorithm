@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No17 {
+class No17 {
 
     List<String> res = new ArrayList<>();
     Map<Character, List<Character>> keyboard = new HashMap<>();

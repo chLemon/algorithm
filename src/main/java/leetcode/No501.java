@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class No501 {
+class No501 {
 
     private static class TreeNode {
         int val;

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No797 {
+class No797 {
 
     List<List<Integer>> res = new ArrayList<>();
 

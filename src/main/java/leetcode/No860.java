@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No860 {
+class No860 {
     int count5 = 0;
     int count10 = 0;
     int count20 = 0;

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No704 {
+class No704 {
 
     public static void main(String[] args) {
         int search = search(new int[]{5}, 5);

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No583 {
+class No583 {
 
     public int minDistance(String word1, String word2) {
         int[][] f = new int[word1.length() + 1][word2.length() + 1];

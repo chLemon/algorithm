@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class No452 {
+class No452 {
 
     public static void main(String[] args) {
         No452 no = new No452();

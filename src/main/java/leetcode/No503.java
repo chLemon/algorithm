@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 
-public class No503 {
+class No503 {
 
     public int[] nextGreaterElements(int[] nums) {
         int[] res = new int[nums.length];

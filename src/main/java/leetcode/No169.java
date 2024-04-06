@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No169 {
+class No169 {
 //    public int majorityElement(int[] nums) {
 //        int lo = 0;
 //        int hi = 1;

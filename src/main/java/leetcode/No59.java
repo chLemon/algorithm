@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class No59 {
+class No59 {
 
     public int[][] generateMatrix(int n) {
         int[][] res = new int[n][n];

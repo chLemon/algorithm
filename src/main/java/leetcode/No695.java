@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No695 {
+class No695 {
 
     int[] dir = new int[]{-1, 0, 1, 0, -1};
 

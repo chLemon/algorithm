@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No105 {
+class No105 {
 
     public static void main(String[] args) {
         No105 no = new No105();

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class No435 {
+class No435 {
 
     public int eraseOverlapIntervals(int[][] intervals) {
         // 左端点排序，遇到重叠的时候，去掉尾部更大的那个

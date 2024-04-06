@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class No407 {
+class No407 {
 
     public int trapRainWater(int[][] heightMap) {
         // water[i][j]=max(heightMap[i][j],min(water[i−1][j],water[i+1][j],water[i][j−1],water[i][j+1]))

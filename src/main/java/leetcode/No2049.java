@@ -1,6 +1,6 @@
 //package leetcode;
 //
-//public class No2049 {
+//class No2049 {
 //
 //	public int countHighestScoreNodes(int[] parents) {
 //	}

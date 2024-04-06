@@ -4,7 +4,7 @@ import util.JacksonUtil;
 
 import java.util.*;
 
-public class No2192 {
+class No2192 {
 
     public static void main(String[] args) {
         No2192 no = new No2192();

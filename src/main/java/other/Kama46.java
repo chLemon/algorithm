@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Kama46 {
+class Kama46 {
 
     // 01背包问题
     public static void main(String[] args) throws Exception {

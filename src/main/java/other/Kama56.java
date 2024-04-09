@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Kama56 {
+class Kama56 {
 
 
     public static void main(String[] args) {

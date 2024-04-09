@@ -46,6 +46,7 @@ class No347 {
                 minHeap.poll();
             }
         }
+        // 你可以按 任意顺序 返回答案
         return minHeap.stream().mapToInt(o -> o[0]).toArray();
     }
 

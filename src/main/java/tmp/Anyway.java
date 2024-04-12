@@ -2,97 +2,46 @@ package tmp;
 
 class Anyway {
 
-    private int[][] chessboard;    // 棋盘
-    private int count;// 方案数
-
     public static void main(String[] args) {
-        Anyway anyway = new Anyway();
-        int cal = anyway.cal(new int[][]{
-                {0, 0, 0, 0, 1, 1, 1, 0},
-                {0, 0, 0, 0, 0, 0, 1, 0},
-                {1, 0, 1, 0, 1, 1, 1, 0},
-                {0, 1, 1, 1, 0, 0, 0, 1},
-                {1, 1, 0, 0, 1, 1, 1, 0},
-                {0, 1, 0, 0, 1, 1, 1, 0},
-                {1, 1, 0, 1, 1, 1, 1, 0},
-                {0, 1, 0, 1, 1, 0, 0, 0},
-        });
-        System.out.println(cal);
-    }
-
-    public int cal(int[][] chessboard) {
-        this.chessboard = chessboard;   // 保存到全局变量，方便访问
-
-        backTracing(0, 8);
-        
-        return count;
+        System.out.println(bag());
     }
 
     /**
-     * @param position     当前放到第几个格子了
-     * @param remainCastle 还要放的车的个数
+     * 本题为典型的 完全背包问题
+     * 下面给出一个二维解法，方便理解
+     * 通常会用一维解法降低复杂度
+     * 而由于本题有30元限制，增加一维来表示当前用掉的金额
      */
-    // position: 
-    private void backTracing(int position, int remainCastle) {
-        if (64 - position < remainCastle) return;   // 剪枝，其余剪枝请自行发挥
-        if (position == 64 || remainCastle == 0) {
-            // 全部放完了
-            if (remainCastle == 0) count++;
-            return;
+    private static int bag() {
+        // 为了方便用Int表示所有价格，将所有价格乘2。即鸡的价格为 4 2 1，现有30元。易证不改变答案
+        int[] chickenPrices = new int[]{4, 2, 1};
+
+        // 定义 f[i][j][0] ，表示在考虑购买 0-i 种鸡时，购买 j 只鸡可能的方案数
+        // 定义 f[i][j][1] ，表示这种情况下花掉的钱
+
+        // 为了计算方便，i,j 添加0行0列
+        // 例如：f[1][1][0]表示，只买a种鸡、购买1只的方案数；f[2][1][0]表示，考虑购买a种和b种鸡、购买1只的方案数 
+        int[][][] f = new int[4][11][2];
+
+        // 初始化：
+        // 考虑购买i种鸡，但是只购买0只的方案数初始化为 1，花费为0
+        for (int i = 0; i < 4; i++) {
+            f[i][0][0] = 1;
         }
+        // 什么种类的鸡都不买，购买j只的方案为0，花费为0
 
-        int lineNum = position / 8; // 这个位置的行号 i
-        int columnNum = position % 8;   // 这个位置的列号 j
-
-        if (chessboard[lineNum][columnNum] == 0) {
-            // 当前位置是洞，不能放
-            backTracing(position + 1, remainCastle);
-        } else {
-            // 当前位置可以考虑放
-            if (conflict(lineNum, columnNum)) {
-                // 当前位置和别的车有冲突，不能放
-                backTracing(position + 1, remainCastle);
-            } else {
-                // 当前位置可以放
-                chessboard[lineNum][columnNum] = 2;
-                backTracing(position + 1, remainCastle - 1);
-                // 回溯
-                chessboard[lineNum][columnNum] = 1;
+        // 递推公式：
+        for (int i = 1; i < 4; i++) {
+            int chickenPrice = chickenPrices[i - 1];
+            for (int j = 1; j < 11; j++) {
+                f[i][j][0] = f[i - 1][j][0];    // 不买第i种鸡时的方案数
+                for (int k = 1; k <= j && k * chickenPrice + f[i - 1][j - k][1] < 30; k++) {
+                    f[i][j][0] += f[i - 1][j - k][0];
+                }
             }
         }
+        return f[3][10][0];
     }
 
-    // i,j 处放置车是否和目前棋盘上的情况冲突
-    // 假定当前算法复杂度x，主算法复杂度为 O(x * 64)
-    private boolean conflict(int i, int j) {
-        // 直接模拟判断，上下左右是否会冲突，由于我们是从左至右，从上至下摆棋子，所以只需要看上方和左边是否有车就行。
-        // 复杂度 O(2*8) = O(16)
-        // 注意国际象棋规则中，车只能上下左右移动，不能斜着走
-
-        // 上
-        int upj = j;
-        while (--upj >= 0) {
-            if (chessboard[i][upj] == 0) {
-                // 遇到了洞，阻断
-                break;
-            } else if (chessboard[i][upj] == 2) {
-                // 遇到了车，冲突
-                return true;
-            }
-        }
-        // 上方无冲突
-        // 左
-        int lefti = i;
-        while (--lefti >= 0) {
-            if (chessboard[lefti][j] == 0) {
-                // 遇到了洞，阻断
-                break;
-            } else if (chessboard[lefti][j] == 2) {
-                // 遇到了车，冲突
-                return true;
-            }
-        }
-        return false;
-    }
 
 }

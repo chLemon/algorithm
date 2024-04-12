@@ -15,17 +15,10 @@ public class NoteTest {
     @Test
     @SneakyThrows
     public void test() {
-        int k = 7;
-        int bitCount = 0;
-        while (k != 0) {
-            if ((k & 1) != 0) {
-                // 满足
-                int j = 1 << bitCount;
-                System.out.println(j);
-            }
-            bitCount++;
-            k >>= 1;
-        }
+        char x = 'z';
+        System.out.println((int) x);
+        System.out.println((int) 'Z');
+        System.out.println((int) '9');
 
     }
 

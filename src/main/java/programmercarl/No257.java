@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No257 {
+class No257 {
 
     public static void main(String[] args) {
         No257 no = new No257();

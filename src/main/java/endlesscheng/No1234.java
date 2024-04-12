@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No1234 {
+class No1234 {
 
     public int balancedString(String s) {
         // 当除了窗口内，每个字符的出现次数，都小于等于 n/4，则可以

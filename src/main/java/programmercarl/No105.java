@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No105 {
+class No105 {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         // 中 左右

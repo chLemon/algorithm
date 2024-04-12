@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class No515 {
+class No515 {
 
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> res = new ArrayList<>();

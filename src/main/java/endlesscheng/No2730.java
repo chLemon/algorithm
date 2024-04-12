@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No2730 {
+class No2730 {
 
     public int longestSemiRepetitiveSubstring(String s) {
         int maxLen = 1;

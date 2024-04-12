@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No713 {
+class No713 {
 
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         if (k <= 1) return 0;

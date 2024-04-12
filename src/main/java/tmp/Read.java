@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Read {
+class Read {
 
     private static final int MX = 51;
     private static final int[][] coprime = new int[MX][MX];

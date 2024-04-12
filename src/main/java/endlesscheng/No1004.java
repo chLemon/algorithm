@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No1004 {
+class No1004 {
 
     public static void main(String[] args) {
         No1004 no = new No1004();

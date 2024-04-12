@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No1766 {
+class No1766 {
 
     int[] depths = new int[51]; // 表示节点值为 x 的节点，最近的深度是多少
     int[] indexes = new int[51]; // 表示值为x的节点，最近的编号是多少

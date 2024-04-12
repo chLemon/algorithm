@@ -3,7 +3,7 @@ package endlesscheng;
 import java.util.HashSet;
 import java.util.Set;
 
-public class No3 {
+class No3 {
 
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;

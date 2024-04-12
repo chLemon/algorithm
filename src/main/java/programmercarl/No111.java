@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No111 {
+class No111 {
 
     public int minDepth(TreeNode root) {
         if (root == null) return 0;

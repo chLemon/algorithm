@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No404 {
+class No404 {
 
     public int sumOfLeftLeaves(TreeNode root) {
         int sum = 0;

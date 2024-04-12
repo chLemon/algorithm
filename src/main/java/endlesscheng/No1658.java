@@ -2,7 +2,7 @@ package endlesscheng;
 
 import java.util.Arrays;
 
-public class No1658 {
+class No1658 {
 
     // 正难则反
     public int minOperations(int[] nums, int x) {

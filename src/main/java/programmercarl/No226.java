@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No226 {
+class No226 {
 
     public TreeNode invertTree(TreeNode root) {
         if (root == null) return null;

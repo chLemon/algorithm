@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No209 {
+class No209 {
 
     public int minSubArrayLen(int target, int[] nums) {
         int minLen = Integer.MAX_VALUE;

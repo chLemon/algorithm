@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No110 {
+class No110 {
 
     // 左子树的深度 与 右子树的深度 差 <=1
     public boolean isBalanced(TreeNode root) {

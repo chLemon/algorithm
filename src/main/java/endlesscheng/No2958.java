@@ -3,7 +3,7 @@ package endlesscheng;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No2958 {
+class No2958 {
 
     public int maxSubarrayLength(int[] nums, int k) {
         int maxLen = 0;

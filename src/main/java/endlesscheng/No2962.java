@@ -1,6 +1,6 @@
 package endlesscheng;
 
-public class No2962 {
+class No2962 {
 
     public long countSubarrays(int[] nums, int k) {
         int max = 0;

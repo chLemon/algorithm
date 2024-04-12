@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No112 {
+class No112 {
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
         return dfs(root, 0, targetSum);

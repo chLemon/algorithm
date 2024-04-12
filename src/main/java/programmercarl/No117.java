@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No117 {
+class No117 {
 
     public Node connect(Node root) {
         if (root == null) return root;

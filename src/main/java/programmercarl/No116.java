@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No116 {
+class No116 {
 
     // 还有一种空间复杂度O(1)的做法：假定当前层已经排好了，然后排下一层
     public Node connect(Node root) {

@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No513 {
+class No513 {
 
     public int findBottomLeftValue(TreeNode root) {
         Deque<TreeNode> queue = new ArrayDeque<>();

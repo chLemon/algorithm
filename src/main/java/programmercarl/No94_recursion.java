@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No94_recursion {
+class No94_recursion {
 
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();

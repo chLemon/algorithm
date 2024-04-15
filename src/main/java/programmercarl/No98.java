@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No98 {
+class No98 {
 
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;

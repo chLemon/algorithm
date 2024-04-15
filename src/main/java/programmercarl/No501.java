@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No501 {
+class No501 {
 
     Integer last = null;
     int count = 0;

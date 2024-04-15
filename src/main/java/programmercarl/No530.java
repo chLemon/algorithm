@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No530 {
+class No530 {
 
     int min = 0x3f3f3f;
     int last = -1;

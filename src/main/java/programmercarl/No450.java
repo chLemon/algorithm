@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No450 {
+class No450 {
 
     public TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) return null;

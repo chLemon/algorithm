@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No538 {
+class No538 {
 
     int sum = 0;
 

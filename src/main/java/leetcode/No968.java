@@ -1,15 +1,26 @@
 package leetcode;
 
+
 class No968 {
 
     public static void main(String[] args) {
         No968 no = new No968();
-        TreeNode root1 = new TreeNode(0, new TreeNode(0,
+//        TreeNode root1 = new TreeNode(0, new TreeNode(0,
+//                new TreeNode(0,
+//                        new TreeNode(0, null, new TreeNode(0)), null), null), null);
+//        TreeNode root2 = new TreeNode(0, new TreeNode(0, new TreeNode(), new TreeNode()), null);
+//        int i = no.minCameraCover(root2);
+        no.minCameraCover(
                 new TreeNode(0,
-                        new TreeNode(0, null, new TreeNode(0)), null), null), null);
-        TreeNode root2 = new TreeNode(0, new TreeNode(0, new TreeNode(), new TreeNode()), null);
-        int i = no.minCameraCover(root2);
-        System.out.println(i);
+                        new TreeNode(0, new TreeNode(0,
+                                new TreeNode(0, new TreeNode(0), null
+                                ), null
+                        ), new TreeNode(0)
+                        ),
+                        new TreeNode(0,
+                                new TreeNode(0, null, new TreeNode(0)), null
+                        ))
+        );
     }
 
     public int minCameraCover(TreeNode root) {

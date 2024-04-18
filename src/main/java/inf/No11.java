@@ -1,4 +1,4 @@
-package endlesscheng;
+package inf;
 
 class No11 {
 

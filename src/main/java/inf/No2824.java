@@ -1,4 +1,4 @@
-package endlesscheng;
+package inf;
 
 import java.util.Collections;
 import java.util.List;

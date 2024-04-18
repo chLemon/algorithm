@@ -38,15 +38,14 @@ class Read {
             List<Integer> res = getRes(f, arr, sum, n);
             System.out.println(res);
         }
-
     }
 
-    private static List<Integer> getRes(boolean[][] f, int[] arr, int sum, int n) {
+    private static List<Integer> getRes(boolean[][] dp, int[] arr, int sum, int n) {
         List<Integer> res = new ArrayList<>();
         int j = sum;
         for (int i = n; i > 1; i--) {
             int x = arr[i - 1];
-            if (f[i - 1][j]) {
+            if (dp[i - 1][j]) {
                 // 如果上面也是true，说明当前数字不需要，也可以
             } else {
                 // 当前数字需要，移动j

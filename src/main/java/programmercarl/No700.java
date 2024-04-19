@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No700 {
+class No700 {
 
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null || root.val == val) return root;

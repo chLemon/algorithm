@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No2924 {
+class No2924 {
 
     public int findChampion(int n, int[][] edges) {
         // 寻找入度为0的节点

@@ -24,21 +24,18 @@ class No45 {
     }
 
     public int jump2(int[] nums) {
-        if (nums.length == 1) return 0;
-        int curMaxDistance = 0;
-        int res = 0;
-        int nextMaxDistance = 0;
-        for (int i = 0; i < nums.length; i++) {
-            nextMaxDistance = Math.max(i + nums[i], nextMaxDistance);
-            if (nextMaxDistance >= nums.length - 1) {
-                res++;
-                break;
+        int count = 0;
+        int start = 0;
+        int end = 1;
+        while (end < nums.length) {
+            int maxPos = 0;
+            for (int i = start; i < end; i++) {
+                maxPos = Math.max(maxPos, i + nums[i]);
             }
-            if (i >= curMaxDistance) {
-                res++;
-                curMaxDistance = nextMaxDistance;
-            }
+            start = end;    // 下一次起跳范围起点
+            end = maxPos + 1;
+            count++;
         }
-        return res;
+        return count;
     }
 }

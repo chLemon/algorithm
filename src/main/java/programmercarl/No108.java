@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No108 {
+class No108 {
 
     public TreeNode sortedArrayToBST(int[] nums) {
         return sortedArrayToBST(nums, 0, nums.length - 1);

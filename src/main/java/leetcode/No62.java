@@ -4,7 +4,6 @@ class No62 {
 
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
-        dp[0][0] = 0;
         for (int i = 0; i < n; i++) {
             dp[0][i] = 1;
         }

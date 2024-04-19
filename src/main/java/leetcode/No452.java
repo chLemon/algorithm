@@ -28,5 +28,25 @@ class No452 {
         return arrowCount;
     }
 
+    // 左端点排序更好，因为左端点找到每一支箭，一定都射穿了所有可能能射到的
+    // 右端点则不一定，其实是靠题意将一些大区间滞后处理了。如：
+    // [0,              5]
+    //         [2,3]
+    // [0,1]
+    public int findMinArrowShots2(int[][] points) {
+        // 用右端点升序
+        Arrays.sort(points, Comparator.comparingInt(a -> a[1]));
+        int count = 1;
+        int arrow = points[0][1];
+
+        for (int i = 1; i < points.length; i++) {
+            if (arrow < points[i][0]) {
+                count++;
+                arrow = points[i][1];
+            }
+        }
+        return count;
+    }
+
 
 }

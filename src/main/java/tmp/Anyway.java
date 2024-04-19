@@ -3,7 +3,7 @@ package tmp;
 class Anyway {
 
     public static void main(String[] args) {
-        System.out.println(cal());
+        System.out.println(cal(null));
     }
 
     private static int[][] cal(int[] nums) {

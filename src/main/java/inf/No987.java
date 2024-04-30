@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No987 {
+class No987 {
 
     List<int[]> allNodes = new ArrayList<>();
 

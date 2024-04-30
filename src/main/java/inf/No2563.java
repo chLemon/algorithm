@@ -2,7 +2,7 @@ package inf;
 
 import java.util.Arrays;
 
-public class No2563 {
+class No2563 {
 
     // 为了避免重复，并且 i != j，二分查找的时候，枚举一个找另一个。所以枚举右侧点
     public long countFairPairs(int[] nums, int lower, int upper) {

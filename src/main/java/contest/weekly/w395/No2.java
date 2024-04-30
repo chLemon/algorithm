@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No2 {
+class No2 {
 
 
     public int minimumAddedInteger(int[] nums1, int[] nums2) {

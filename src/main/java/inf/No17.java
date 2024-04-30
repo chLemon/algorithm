@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No17 {
+class No17 {
 
 
     String[] words = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};

@@ -1,6 +1,6 @@
 package inf;
 
-public class No1901 {
+class No1901 {
 
     public static void main(String[] args) {
         new No1901().findPeakGrid(new int[][]{{10, 20, 40, 50, 60, 70}, {1, 4, 2, 3, 500, 80}});

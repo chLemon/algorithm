@@ -2,7 +2,7 @@ package inf;
 
 import java.util.Arrays;
 
-public class No1373 {
+class No1373 {
 
     int max = 0;
     int INF = 0x3f3f3f;

@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No46 {
+class No46 {
 
 
     List<List<Integer>> res = new ArrayList<>();

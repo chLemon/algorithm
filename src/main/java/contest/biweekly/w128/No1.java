@@ -1,6 +1,6 @@
 package contest.biweekly.w128;
 
-public class No1 {
+class No1 {
 
     public int scoreOfString(String s) {
         int sum = 0;

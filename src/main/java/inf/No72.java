@@ -1,6 +1,6 @@
 package inf;
 
-public class No72 {
+class No72 {
 
     public int minDistance(String word1, String word2) {
         int m = word1.length();

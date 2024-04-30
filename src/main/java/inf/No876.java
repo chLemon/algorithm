@@ -1,6 +1,6 @@
 package inf;
 
-public class No876 {
+class No876 {
 
     public ListNode middleNode(ListNode head) {
         ListNode slow = head;

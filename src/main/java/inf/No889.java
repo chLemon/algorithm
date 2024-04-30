@@ -3,7 +3,7 @@ package inf;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No889 {
+class No889 {
 
     Map<Integer, Integer> postorderMap = new HashMap<>();
 

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class No705 {
+class No705 {
 
     class MyHashSet {
 

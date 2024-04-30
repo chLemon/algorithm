@@ -2,7 +2,7 @@ package contest.weekly.w395;
 
 import java.util.Arrays;
 
-public class No1 {
+class No1 {
 
 
     public int addedInteger(int[] nums1, int[] nums2) {

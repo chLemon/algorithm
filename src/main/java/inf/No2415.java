@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No2415 {
+class No2415 {
 
     // 也可以用dfs，对称子树的做法
 

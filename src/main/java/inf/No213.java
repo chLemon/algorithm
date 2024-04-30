@@ -1,6 +1,6 @@
 package inf;
 
-public class No213 {
+class No213 {
 
     public static void main(String[] args) {
         System.out.println(new No213().rob(new int[]{2, 3, 2}));

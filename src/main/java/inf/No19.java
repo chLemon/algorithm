@@ -1,6 +1,6 @@
 package inf;
 
-public class No19 {
+class No19 {
 
 
     public ListNode removeNthFromEnd(ListNode head, int n) {

@@ -3,7 +3,7 @@ package inf;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No106 {
+class No106 {
 
     Map<Integer, Integer> inorderMap = new HashMap<>();
 

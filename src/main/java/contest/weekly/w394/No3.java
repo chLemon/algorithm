@@ -2,7 +2,7 @@ package contest.weekly.w394;
 
 import java.util.Arrays;
 
-public class No3 {
+class No3 {
 
     public static void main(String[] args) {
         System.out.println(new No3().minimumOperations(new int[][]

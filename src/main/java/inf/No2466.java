@@ -1,6 +1,6 @@
 package inf;
 
-public class No2466 {
+class No2466 {
 
     public static void main(String[] args) {
         new No2466().countGoodStrings(3, 3, 1, 1);

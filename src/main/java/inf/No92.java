@@ -1,6 +1,6 @@
 package inf;
 
-public class No92 {
+class No92 {
 
     public static void main(String[] args) {
         new No92().reverseBetween(

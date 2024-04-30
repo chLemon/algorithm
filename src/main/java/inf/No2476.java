@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No2476 {
+class No2476 {
 
     List<Integer> inorder = new ArrayList<>();
 

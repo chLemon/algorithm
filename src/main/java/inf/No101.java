@@ -1,6 +1,6 @@
 package inf;
 
-public class No101 {
+class No101 {
 
     public boolean isSymmetric(TreeNode root) {
         return isSymmetric(root.left, root.right);

@@ -1,6 +1,6 @@
 package contest.weekly.w394;
 
-public class No2 {
+class No2 {
 
     public static void main(String[] args) {
         new No2().numberOfSpecialChars("aaAbcBC");

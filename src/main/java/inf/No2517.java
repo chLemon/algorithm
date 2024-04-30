@@ -2,7 +2,7 @@ package inf;
 
 import java.util.Arrays;
 
-public class No2517 {
+class No2517 {
 
     public static void main(String[] args) {
         System.out.println(new No2517().maximumTastiness(new int[]{1, 1, 1, 1, 1}, 5));

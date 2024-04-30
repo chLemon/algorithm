@@ -1,6 +1,6 @@
 package inf;
 
-public class No82 {
+class No82 {
 
     public ListNode deleteDuplicates(ListNode head) {
         ListNode dummy = new ListNode(0, head);

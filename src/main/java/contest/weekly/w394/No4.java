@@ -2,7 +2,7 @@ package contest.weekly.w394;
 
 import java.util.*;
 
-public class No4 {
+class No4 {
 
     public static void main(String[] args) {
         boolean[] res = new No4().findAnswer(4, new int[][]

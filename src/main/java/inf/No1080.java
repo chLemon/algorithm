@@ -1,6 +1,6 @@
 package inf;
 
-public class No1080 {
+class No1080 {
 
     public TreeNode sufficientSubset(TreeNode root, int limit) {
         boolean b = sufficientSubset(root, limit, 0);

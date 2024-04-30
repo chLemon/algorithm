@@ -1,6 +1,6 @@
 package inf;
 
-public class No143 {
+class No143 {
 
     public static void main(String[] args) {
         new No143().reorderList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))));

@@ -1,6 +1,6 @@
 package inf;
 
-public class No938 {
+class No938 {
 
     public int rangeSumBST(TreeNode root, int low, int high) {
         if (root == null) return 0;

@@ -1,6 +1,6 @@
 package inf;
 
-public class No117 {
+class No117 {
 
     public Node connect(Node root) {
         Node dummy = new Node();

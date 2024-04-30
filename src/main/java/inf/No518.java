@@ -1,6 +1,6 @@
 package inf;
 
-public class No518 {
+class No518 {
 
     public int change(int amount, int[] coins) {
         int n = coins.length;

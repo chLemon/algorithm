@@ -1,6 +1,6 @@
 package inf;
 
-public class No875 {
+class No875 {
 
     public int minEatingSpeed(int[] piles, int h) {
         // 珂珂可以选择的速度是 [1, max_pile]

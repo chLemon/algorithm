@@ -1,6 +1,6 @@
 package inf;
 
-public class No83 {
+class No83 {
 
     public ListNode deleteDuplicates(ListNode head) {
         ListNode cur = head;

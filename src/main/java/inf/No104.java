@@ -1,6 +1,6 @@
 package inf;
 
-public class No104 {
+class No104 {
 
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;

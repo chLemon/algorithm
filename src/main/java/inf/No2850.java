@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No2850 {
+class No2850 {
 
     public int minimumMoves(int[][] grid) {
         List<int[]> froms = new ArrayList<>();

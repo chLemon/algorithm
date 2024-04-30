@@ -1,6 +1,6 @@
 package inf;
 
-public class No746 {
+class No746 {
 
     public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;

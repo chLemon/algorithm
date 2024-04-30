@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No22 {
+class No22 {
 
     List<String> res = new ArrayList<>();
     StringBuilder builder = new StringBuilder();

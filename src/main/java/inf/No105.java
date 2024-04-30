@@ -1,6 +1,6 @@
 package inf;
 
-public class No105 {
+class No105 {
 
     public static void main(String[] args) {
         new No105().buildTree(new int[]{3, 9, 20, 15, 7},

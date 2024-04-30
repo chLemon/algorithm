@@ -1,6 +1,6 @@
 package contest.weekly.w395;
 
-public class No3 {
+class No3 {
 
     public long minEnd(int n, int x) {
         long res = x;

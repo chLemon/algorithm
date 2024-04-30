@@ -1,6 +1,6 @@
 package inf;
 
-public class No34 {
+class No34 {
     public static void main(String[] args) {
         new No34().searchRange(new int[]{}, 0);
     }

@@ -1,6 +1,6 @@
 package inf;
 
-public class No141 {
+class No141 {
 
     public boolean hasCycle(ListNode head) {
         ListNode slow = head;

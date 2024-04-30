@@ -1,6 +1,6 @@
 package inf;
 
-public class No275 {
+class No275 {
 
     public int hIndex(int[] citations) {
         // 也可以对答案二分

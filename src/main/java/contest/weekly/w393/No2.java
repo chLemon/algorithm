@@ -1,10 +1,9 @@
 package contest.weekly.w393;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-public class No2 {
+class No2 {
 
     public int maximumPrimeDifference(int[] nums) {
         // 预处理得到所有的素数

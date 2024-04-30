@@ -1,6 +1,6 @@
 package inf;
 
-public class No445 {
+class No445 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 翻转l1 l2 相加，结果翻转

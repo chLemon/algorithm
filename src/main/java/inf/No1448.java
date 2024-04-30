@@ -1,6 +1,6 @@
 package inf;
 
-public class No1448 {
+class No1448 {
 
     int INF = 0x3f3f3f;
 

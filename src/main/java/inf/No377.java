@@ -1,6 +1,6 @@
 package inf;
 
-public class No377 {
+class No377 {
 
     public int combinationSum4(int[] nums, int target) {
         int[] f = new int[target + 1];

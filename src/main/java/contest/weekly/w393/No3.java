@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class No3 {
+class No3 {
 
     public static void main(String[] args) {
         No3 no = new No3();

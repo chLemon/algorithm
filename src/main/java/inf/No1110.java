@@ -3,7 +3,7 @@ package inf;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class No1110 {
+class No1110 {
 
     Set<Integer> toDelete;
 

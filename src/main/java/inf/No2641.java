@@ -3,7 +3,7 @@ package inf;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No2641 {
+class No2641 {
 
 
     public TreeNode replaceValueInTree(TreeNode root) {

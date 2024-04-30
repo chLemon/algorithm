@@ -2,7 +2,7 @@ package inf;
 
 import java.util.Arrays;
 
-public class No2300 {
+class No2300 {
 
     public int[] successfulPairs(int[] spells, int[] potions, long success) {
         int[] res = new int[spells.length];

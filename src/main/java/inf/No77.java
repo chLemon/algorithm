@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No77 {
+class No77 {
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();
     int n;

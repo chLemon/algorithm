@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No52 {
+class No52 {
     int res = 0;
     int[] positions;
     boolean[] columnHas;

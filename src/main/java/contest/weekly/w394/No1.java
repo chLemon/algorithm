@@ -1,6 +1,6 @@
 package contest.weekly.w394;
 
-public class No1 {
+class No1 {
 
     public int numberOfSpecialChars(String word) {
         boolean[] little = new boolean[26];

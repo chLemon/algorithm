@@ -1,6 +1,6 @@
 package inf;
 
-public class No110 {
+class No110 {
 
     public boolean isBalanced(TreeNode root) {
         return isBalancedReturnHeight(root) != -1;

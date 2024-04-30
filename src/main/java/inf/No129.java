@@ -1,6 +1,6 @@
 package inf;
 
-public class No129 {
+class No129 {
 
     int sum = 0;
 

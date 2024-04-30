@@ -1,6 +1,6 @@
 package inf;
 
-public class No112 {
+class No112 {
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if (root == null) {

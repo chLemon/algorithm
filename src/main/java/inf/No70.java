@@ -1,6 +1,6 @@
 package inf;
 
-public class No70 {
+class No70 {
 
     public int climbStairs(int n) {
         int[] f = new int[n + 1];

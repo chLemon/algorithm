@@ -1,6 +1,6 @@
 package inf;
 
-public class No116 {
+class No116 {
 
     public Node connect(Node root) {
         Node start = root;

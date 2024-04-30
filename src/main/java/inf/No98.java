@@ -1,6 +1,6 @@
 package inf;
 
-public class No98 {
+class No98 {
 
     long INF = Long.MAX_VALUE;
 

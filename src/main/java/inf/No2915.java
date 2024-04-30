@@ -3,7 +3,7 @@ package inf;
 import java.util.Arrays;
 import java.util.List;
 
-public class No2915 {
+class No2915 {
 
     public int lengthOfLongestSubsequence(List<Integer> nums, int target) {
         // 选择若干个数，使得和为target。求最大个数

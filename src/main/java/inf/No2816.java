@@ -1,6 +1,6 @@
 package inf;
 
-public class No2816 {
+class No2816 {
 
     public static void main(String[] args) {
         new No2816().doubleIt(new ListNode(1, new ListNode(8, new ListNode(9))));

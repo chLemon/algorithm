@@ -1,8 +1,6 @@
 package inf;
 
-import java.util.List;
-
-public class No24 {
+class No24 {
 
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(0, head);

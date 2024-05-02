@@ -1,8 +1,11 @@
 package contest.biweekly.w128;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class No2 {
+class No2 {
 
     public static void main(String[] args) {
         No2 no = new No2();

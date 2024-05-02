@@ -2,7 +2,7 @@ package contest.weekly.w393;
 
 import java.util.Arrays;
 
-public class No4 {
+class No4 {
 
     public static void main(String[] args) {
         No4 no = new No4();

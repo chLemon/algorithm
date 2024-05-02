@@ -1,6 +1,6 @@
 package inf;
 
-public class No162 {
+class No162 {
 
     public static void main(String[] args) {
         new No162().test(new int[]{1, 2, 3});

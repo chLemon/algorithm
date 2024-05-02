@@ -1,6 +1,6 @@
 package contest.weekly.w393;
 
-public class No1 {
+class No1 {
 
     public String findLatestTime(String s) {
         char[] chars = s.toCharArray();

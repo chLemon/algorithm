@@ -3,7 +3,7 @@ package inf;
 import java.util.Arrays;
 import java.util.List;
 
-public class No2861 {
+class No2861 {
 
     public static void main(String[] args) {
         System.out.println(new No2861().maxNumberOfAlloys(1, 2, 24308609,

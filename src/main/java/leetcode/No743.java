@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class No743 {
+class No743 {
 
 
     public int networkDelayTime(int[][] times, int n, int k) {

@@ -2,7 +2,7 @@ package contest.biweekly.w128;
 
 import java.util.*;
 
-public class No4 {
+class No4 {
 
     public static void main(String[] args) {
         No4 no = new No4();

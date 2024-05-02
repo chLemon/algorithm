@@ -1,6 +1,6 @@
 package inf;
 
-public class No33 {
+class No33 {
 
     public int search(int[] nums, int target) {
         int left = 0;

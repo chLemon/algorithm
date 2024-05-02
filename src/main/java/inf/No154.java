@@ -1,6 +1,6 @@
 package inf;
 
-public class No154 {
+class No154 {
 
     public static void main(String[] args) {
         new No154().findMin(new int[]{3, 1, 3});

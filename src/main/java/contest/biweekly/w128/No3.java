@@ -1,9 +1,10 @@
 package contest.biweekly.w128;
 
-import java.util.*;
-import java.util.function.BiFunction;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-public class No3 {
+class No3 {
 
     public static void main(String[] args) {
         No3 no = new No3();

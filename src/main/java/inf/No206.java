@@ -1,6 +1,6 @@
 package inf;
 
-public class No206 {
+class No206 {
 
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;

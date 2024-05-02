@@ -2,7 +2,7 @@ package inf;
 
 import java.util.Arrays;
 
-public class No2439 {
+class No2439 {
 
     public static void main(String[] args) {
         new No2439().minimizeArrayValue(new int[]{3, 7, 1, 6});

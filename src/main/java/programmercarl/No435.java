@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class No435 {
+class No435 {
 
     public int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[1]));

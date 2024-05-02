@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No70 {
+class No70 {
 
     public int climbStairs(int n) {
         if (n <= 3) return n;

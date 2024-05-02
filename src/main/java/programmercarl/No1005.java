@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No1005 {
+class No1005 {
 
     public static void main(String[] args) {
         No1005 no = new No1005();

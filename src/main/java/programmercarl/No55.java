@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No55 {
+class No55 {
 
     public boolean canJump(int[] nums) {
         int maxIndex = nums[0];

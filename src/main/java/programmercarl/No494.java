@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No494 {
+class No494 {
 
     public static void main(String[] args) {
         new No494().findTargetSumWays(new int[]{1, 0}, 1);

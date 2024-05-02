@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No322 {
+class No322 {
 
     public int coinChange(int[] coins, int amount) {
         int n = coins.length;

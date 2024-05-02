@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No376 {
+class No376 {
 
     public int wiggleMaxLength(int[] nums) {
         if (nums.length <= 1) return 1;

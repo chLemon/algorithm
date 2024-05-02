@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No763 {
+class No763 {
 
     public List<Integer> partitionLabels(String s) {
         int[] lastIndex = new int[26];

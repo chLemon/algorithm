@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No509 {
+class No509 {
 
     public int fib(int n) {
         if (n <= 1) return n;

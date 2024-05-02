@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No63 {
+class No63 {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;

@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No416 {
+class No416 {
 
     public static void main(String[] args) {
         new No416().canPartition(new int[]{1, 5, 11, 5});

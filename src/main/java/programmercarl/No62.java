@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No62 {
+class No62 {
 
     public int uniquePaths(int m, int n) {
         int[][] f = new int[m][n];

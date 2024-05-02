@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No279 {
+class No279 {
 
     public int numSquares(int n) {
         int INF = 0x3f3f3f;

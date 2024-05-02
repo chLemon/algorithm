@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No474 {
+class No474 {
 
     public static void main(String[] args) {
         new No474().findMaxForm(new String[]{"10", "0", "1"}, 0, 1);

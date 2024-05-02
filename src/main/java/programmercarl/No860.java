@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No860 {
+class No860 {
 
     public static void main(String[] args) {
         No860 no = new No860();

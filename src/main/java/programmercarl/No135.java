@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No135 {
+class No135 {
 
     public int candy(int[] ratings) {
         int n = ratings.length;

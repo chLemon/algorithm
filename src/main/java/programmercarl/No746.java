@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No746 {
+class No746 {
 
     public int minCostClimbingStairs(int[] cost) {
         int[] f = new int[cost.length + 1];

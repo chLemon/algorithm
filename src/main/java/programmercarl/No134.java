@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No134 {
+class No134 {
 
     public int canCompleteCircuit(int[] gas, int[] cost) {
         if (Arrays.stream(gas).sum() < Arrays.stream(cost).sum()) {

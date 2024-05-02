@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No96 {
+class No96 {
 
     public static void main(String[] args) {
         new No96().numTrees(3);

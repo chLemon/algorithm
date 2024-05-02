@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No518 {
+class No518 {
 
     public static void main(String[] args) {
         System.out.println(new No518().change(5, new int[]{1, 2, 5}));

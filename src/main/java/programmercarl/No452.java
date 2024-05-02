@@ -3,7 +3,7 @@ package programmercarl;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class No452 {
+class No452 {
 
     public int findMinArrowShots(int[][] points) {
         // 根据左端点排序

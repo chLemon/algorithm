@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No45 {
+class No45 {
     public static void main(String[] args) {
         No45 no = new No45();
         no.jump(new int[]{2, 1});

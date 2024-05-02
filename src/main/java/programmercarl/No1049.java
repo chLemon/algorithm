@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No1049 {
+class No1049 {
 
     // 转换为在数字前加 + -，使得和>=且最小，再转换为 选一些数和接近总和的一半
     public int lastStoneWeightII(int[] stones) {

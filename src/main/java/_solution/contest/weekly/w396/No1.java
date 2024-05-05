@@ -13,50 +13,34 @@ class No1 {
         if (word.length() < 3) {
             return false;
         }
-        Set<Character> legal = new HashSet<>();
-        for (char i = '0'; i <= '9'; i++) {
-            legal.add(i);
-        }
-        for (char i = 'a'; i <= 'z'; i++) {
-            legal.add(i);
-        }
-        for (char i = 'A'; i <= 'Z'; i++) {
-            legal.add(i);
-        }
-        Set<Character> yuan = new HashSet<>();
-        yuan.add('a');
-        yuan.add('A');
-        yuan.add('e');
-        yuan.add('E');
-        yuan.add('i');
-        yuan.add('I');
-        yuan.add('o');
-        yuan.add('O');
-        yuan.add('u');
-        yuan.add('U');
-
-        boolean hasYuan = false;
-        boolean hasFu = false;
-
+        boolean vowel = false;
+        boolean conso = false;
+        Set<Character> v = new HashSet<>();
+        v.add('a');
+        v.add('A');
+        v.add('e');
+        v.add('E');
+        v.add('i');
+        v.add('I');
+        v.add('o');
+        v.add('O');
+        v.add('u');
+        v.add('U');
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
-            if (!legal.contains(c)) {
+            if (c == '@' || c == '#' || c == '$') {
                 return false;
             }
-            if (yuan.contains(c)) {
-                hasYuan = true;
-                continue;
-            }
-            if ('a' <= c && c <= 'z') {
-                hasFu = true;
-            }
-            if ('A' <= c && c <= 'Z') {
-                hasFu = true;
-
+            if (!('0' <= c && c <= '9')) {
+                if (v.contains(c)) {
+                    vowel = true;
+                } else {
+                    conso = true;
+                }
             }
         }
 
-        return hasYuan && hasFu;
+        return vowel && conso;
     }
 
 }

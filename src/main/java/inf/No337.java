@@ -1,6 +1,6 @@
 package inf;
 
-public class No337 {
+class No337 {
 
     public int rob(TreeNode root) {
         int[] res = dfs(root);

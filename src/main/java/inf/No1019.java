@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No1019 {
+class No1019 {
 
     public int[] nextLargerNodes(ListNode head) {
         ListNode cur = head;

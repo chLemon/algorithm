@@ -3,7 +3,7 @@ package inf;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No739 {
+class No739 {
 
     public int[] dailyTemperatures(int[] temperatures) {
         int[] res = new int[temperatures.length];

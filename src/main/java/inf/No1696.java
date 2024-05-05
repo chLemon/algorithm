@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Queue;
 
-public class No1696 {
+class No1696 {
 
     public static void main(String[] args) {
         new No1696().maxResult(new int[]{10, -5, -2, 4, 0, 3}, 3);

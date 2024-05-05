@@ -1,6 +1,6 @@
 package inf;
 
-public class No543 {
+class No543 {
 
     int max = 0;
 

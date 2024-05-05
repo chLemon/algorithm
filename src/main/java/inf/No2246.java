@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No2246 {
+class No2246 {
 
     int max = 0;
     String s;

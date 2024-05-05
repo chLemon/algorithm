@@ -1,6 +1,6 @@
 package inf;
 
-public class No714 {
+class No714 {
 
     public int maxProfit(int[] prices, int fee) {
         // 卖出交手续费

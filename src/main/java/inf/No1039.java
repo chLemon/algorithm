@@ -1,6 +1,6 @@
 package inf;
 
-public class No1039 {
+class No1039 {
 
     public int minScoreTriangulation(int[] values) {
         int n = values.length;

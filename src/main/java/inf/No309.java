@@ -1,6 +1,6 @@
 package inf;
 
-public class No309 {
+class No309 {
 
     public static void main(String[] args) {
         new No309().maxProfit(new int[]{1, 2, 4});

@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No123 {
+class No123 {
 
     public static void main(String[] args) {
         new No123().maxProfit(new int[]{3, 3, 5, 0, 0, 3, 1, 4});

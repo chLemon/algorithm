@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No1035 {
+class No1035 {
 
     public int maxUncrossedLines(int[] nums1, int[] nums2) {
         int m = nums1.length;

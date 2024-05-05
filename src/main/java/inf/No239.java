@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Queue;
 
-public class No239 {
+class No239 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;

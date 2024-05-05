@@ -2,7 +2,7 @@ package contest.biweekly.w129;
 
 import java.util.Arrays;
 
-public class No2 {
+class No2 {
 
     public static void main(String[] args) {
 //        new No2().numberOfRightTriangles(new int[][]{{1, 0, 1}, {1, 0, 0}, {1, 0, 0}});

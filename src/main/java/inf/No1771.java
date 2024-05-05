@@ -1,6 +1,6 @@
 package inf;
 
-public class No1771 {
+class No1771 {
     public static void main(String[] args) {
         new No1771().longestPalindrome("cacb", "cbba");
     }

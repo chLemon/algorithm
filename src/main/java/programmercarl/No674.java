@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No674 {
+class No674 {
 
     public int findLengthOfLCIS(int[] nums) {
         int n = nums.length;

@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No309 {
+class No309 {
 
     public int maxProfit(int[] prices) {
         int n = prices.length;

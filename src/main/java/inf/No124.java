@@ -1,6 +1,6 @@
 package inf;
 
-public class No124 {
+class No124 {
 
     int max = Integer.MIN_VALUE;
 

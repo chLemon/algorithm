@@ -1,6 +1,6 @@
 package programmercarl;
 
-public class No392 {
+class No392 {
 
     public boolean isSubsequence(String s, String t) {
         int i = 0;

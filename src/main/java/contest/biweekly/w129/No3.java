@@ -1,6 +1,6 @@
 package contest.biweekly.w129;
 
-public class No3 {
+class No3 {
 
     public static void main(String[] args) {
         System.out.println(new No3().numberOfStableArrays(3, 3, 2));

@@ -1,5 +1,5 @@
 package contest.biweekly.w129;
 
-public class No4 {
+class No4 {
 
 }

@@ -1,6 +1,6 @@
 package inf;
 
-public class No516 {
+class No516 {
 
     public int longestPalindromeSubseq(String s) {
         // 定义 f[i][j] 为 i开始，j结尾的串里的 最长子序列长度

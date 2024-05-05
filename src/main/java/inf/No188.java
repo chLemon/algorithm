@@ -1,6 +1,6 @@
 package inf;
 
-public class No188 {
+class No188 {
 
     public static void main(String[] args) {
         new No188().maxProfit(2, new int[]{3, 2, 6, 5, 0, 3});

@@ -1,6 +1,6 @@
 package inf;
 
-public class No687 {
+class No687 {
 
     int ans = 0;
 

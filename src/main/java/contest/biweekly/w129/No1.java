@@ -1,6 +1,6 @@
 package contest.biweekly.w129;
 
-public class No1 {
+class No1 {
 
     public boolean canMakeSquare(char[][] grid) {
         if (hasAns(grid)) {

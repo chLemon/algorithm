@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No718 {
+class No718 {
 
     public int findLength(int[] nums1, int[] nums2) {
         int m = nums1.length;

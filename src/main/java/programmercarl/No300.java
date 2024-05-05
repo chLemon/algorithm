@@ -2,7 +2,7 @@ package programmercarl;
 
 import java.util.Arrays;
 
-public class No300 {
+class No300 {
 
     public int lengthOfLIS(int[] nums) {
         int n = nums.length;

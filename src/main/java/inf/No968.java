@@ -1,6 +1,6 @@
 package inf;
 
-public class No968 {
+class No968 {
 
     public int minCameraCover(TreeNode root) {
         int[] res = dfs(root);

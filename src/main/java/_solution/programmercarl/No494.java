@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 import java.util.Arrays;
 
 class No494 {

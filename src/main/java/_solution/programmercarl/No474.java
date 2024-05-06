@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No474 {
 
     public static void main(String[] args) {

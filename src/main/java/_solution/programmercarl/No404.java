@@ -1,5 +1,7 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
+
 class No404 {
 
     public int sumOfLeftLeaves(TreeNode root) {

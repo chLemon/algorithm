@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No226 {
 
     public TreeNode invertTree(TreeNode root) {

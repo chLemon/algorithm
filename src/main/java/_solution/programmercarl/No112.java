@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No112 {
 
     public boolean hasPathSum(TreeNode root, int targetSum) {

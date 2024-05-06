@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No669 {
 
     public TreeNode trimBST(TreeNode root, int low, int high) {

@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No617 {
 
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {

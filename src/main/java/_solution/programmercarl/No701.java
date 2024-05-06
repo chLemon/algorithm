@@ -1,5 +1,7 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
+
 class No701 {
 
     public TreeNode insertIntoBST(TreeNode root, int val) {

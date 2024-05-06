@@ -1,5 +1,7 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
+
 class No530 {
 
     int min = 0x3f3f3f;

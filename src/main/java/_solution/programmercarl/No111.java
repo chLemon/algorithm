@@ -1,5 +1,7 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
+
 class No111 {
 
     public int minDepth(TreeNode root) {

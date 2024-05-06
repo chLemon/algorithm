@@ -1,5 +1,7 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
+
 class No98 {
 
     public boolean isValidBST(TreeNode root) {

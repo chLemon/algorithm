@@ -1,5 +1,6 @@
 package _solution.programmercarl;
 
+import domain.TreeNode;
 class No700 {
 
     public TreeNode searchBST(TreeNode root, int val) {

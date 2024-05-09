@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-import _solution.inf.ListNode;
+import domain.ListNode;
 
 class No141 {
 

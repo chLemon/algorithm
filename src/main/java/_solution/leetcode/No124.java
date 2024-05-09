@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-import _solution.inf.TreeNode;
+import domain.TreeNode;
 
 class No124 {
 

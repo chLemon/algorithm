@@ -1,24 +1,8 @@
 package _solution.leetcode;
 
+import domain.ListNode;
+
 class No2 {
-
-	// Definition for singly-linked list.
-	private static class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode() {
-		}
-
-		ListNode(int val) {
-			this.val = val;
-		}
-
-		ListNode(int val, ListNode next) {
-			this.val = val;
-			this.next = next;
-		}
-	}
 
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode res = new ListNode();

@@ -3,7 +3,7 @@ package _solution.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class No560 {
+class No560 {
 
     public static void main(String[] args) {
         System.out.println(new No560().subarraySum(new int[]{1, 1, 1}, 2));

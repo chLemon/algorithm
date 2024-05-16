@@ -1,6 +1,6 @@
 package _solution.contest.biweekly.w130;
 
-public class No1 {
+class No1 {
 
     public boolean satisfiesConditions(int[][] grid) {
         int m = grid.length;

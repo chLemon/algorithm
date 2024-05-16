@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 
-public class No84 {
+class No84 {
 
     public static void main(String[] args) {
         new No84().largestRectangleArea(new int[]{2, 1, 2});

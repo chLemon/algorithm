@@ -2,50 +2,59 @@ package _solution.leetcode;
 
 class No4 {
 
-	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-		// 先用二分法的思路：
-		/*
-		 一个长度为m, 一个位n, 总长度 m + n
-		 奇数，中位数是第m+n/2 +1 个
-		 偶数，中位数是 m+n/2 与 m+n/2 +1 的平均数
-		 记为k
-		 找到第k小的数
-		 */
-		int k = (nums1.length + nums2.length) / 2;
-		int base1 = 0, base2 = 0;
-		while (k > 1) {
-			int index1 = base1 + k / 2 - 1;
-			int i = index1 <= nums1.length ? nums1[index1] : Integer.MAX_VALUE;
-			int index2 = base2 + k / 2 - 1;
-			int j = index1 <= nums2.length ? nums2[index2] : Integer.MAX_VALUE;
-			if (i <= j) {
-				// num1里前k/2个数都可以抛弃
-				base1 = base1 + k / 2;
-			} else {
-				base2 = base2 + k / 2;
-			}
-			k -= k / 2;
-		}
-		if (((nums1.length + nums2.length) & 1) == 1) {
-			// 奇数
-			if (nums1[base1] < nums2[base2]) {
-				return Math.max(nums2[base2], base1 + 1 >= nums1.length ? Integer.MAX_VALUE : nums1[base1 + 1]);
-			} else if (nums1[base1] == nums2[base2]) {
-				return nums1[base1];
-			} else {
-				return Math.max(nums1[base2], base1 + 1 >= nums2.length ? Integer.MAX_VALUE : nums2[base1 + 1]);
-			}
-		} else {
-			// 偶数
-			if (nums1[base1] < nums2[base2]) {
-				return (nums1[base1] + Math.min((base1 + 1 >= nums1.length ? Integer.MAX_VALUE : nums1[base1 + 1]), nums2[base2])) / 2.0;
-			} else if (nums1[base1] == nums2[base2]) {
-				return nums1[base1];
-			} else {
-				return (nums2[base1] + Math.min((base2 + 1 >= nums2.length ? Integer.MAX_VALUE : nums2[base2 + 1]), nums1[base1])) / 2.0;
-			}
-		}
+	public static void main(String[] args) {
+		System.out.println(new No4().findMedianSortedArrays(new int[]{3, 4}, new int[]{1, 2}));
+	}
 
+	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+		if (nums1.length > nums2.length) {
+			int[] tmp = nums1;
+			nums1 = nums2;
+			nums2 = tmp;
+		}
+		// n1 < n2
+		int m = nums1.length;
+		int n = nums2.length;
+		int left = 0;
+		int right = m;
+		int INF = 0x3f3f3f;
+		while (left <= right) {
+			int i = left + (right - left) / 2;
+			int j = (m + n) / 2 - i;
+			int a = i - 1 >= 0 ? nums1[i - 1] : -INF;
+			int b = i < m ? nums1[i] : INF;
+			int c = j - 1 >= 0 ? nums2[j - 1] : -INF;
+			int d = j < n ? nums2[j] : INF;
+
+
+			int leftMax = Math.max(a, c);
+			int rightMin = Math.min(b, d);
+
+			if (leftMax <= rightMin) {
+				// 答案
+				if (((m + n) & 1) == 1) {
+					// 奇数
+					return rightMin;
+				} else {
+					return (leftMax + rightMin) / 2.0;
+				}
+			} else {
+				if (a > c) {
+					// i <-
+					right = i;
+				} else if (a < c) {
+					left = i + 1;
+				} else {
+					if (b < d) {
+						// i ->
+						left = i + 1;
+					} else {
+						right = i;
+					}
+				}
+			}
+		}
+		return 0;
 	}
 
 }

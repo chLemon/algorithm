@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-public class No8 {
+class No8 {
 
     public static void main(String[] args) {
         System.out.println(new No8().myAtoi(""));

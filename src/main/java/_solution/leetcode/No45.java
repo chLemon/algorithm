@@ -9,6 +9,7 @@ class No45 {
         no.jump2(new int[]{2, 3, 1, 1, 4});
     }
 
+    // O(n^2)
     public int jump(int[] nums) {
         int[] f = new int[nums.length];
         Arrays.fill(f, Integer.MAX_VALUE);
@@ -23,6 +24,7 @@ class No45 {
         return f[nums.length - 1];
     }
 
+    // O(n^2)
     public int jump2(int[] nums) {
         int count = 0;
         int start = 0;

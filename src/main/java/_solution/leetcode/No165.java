@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-public class No165 {
+class No165 {
 
     public int compareVersion(String v1, String v2) {
         String[] ss1 = v1.split("\\."), ss2 = v2.split("\\.");

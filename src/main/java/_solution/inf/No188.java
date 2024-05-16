@@ -6,7 +6,7 @@ class No188 {
         new No188().maxProfit(2, new int[]{3, 2, 6, 5, 0, 3});
     }
 
-    public int maxProfit(int k, int[] prices) {
+    public int maxProfit2(int k, int[] prices) {
         int n = prices.length;
         int INF = 0x3f3f3f;
 
@@ -27,6 +27,31 @@ class No188 {
             for (int j = 1; j <= k; j++) {
                 f[i][j][0] = Math.max(f[i - 1][j][0], f[i - 1][j][1] + x);
                 f[i][j][1] = Math.max(f[i - 1][j][1], f[i - 1][j - 1][0] - x);
+            }
+        }
+        return f[n - 1][k][0];
+    }
+
+    public int maxProfit(int k, int[] prices) {
+        int n = prices.length;
+        int INF = 0x3f3f3f;
+        // 第i天结束，j次操作下，持有/不持有 的利润
+        /*
+        操作次数在卖出时扣减
+        f[i][k][0] = max ( f[i - 1][k][0] , f[i - 1][k - 1][1] + x)
+        f[i][k][1] = max ( f[i - 1][k][1] , f[i - 1][k][0] - x)
+        */
+        int[][][] f = new int[n][k + 1][2];
+        for (int j = 0; j <= k; j++) {
+            f[0][j][1] = -prices[0];
+        }
+        for (int i = 1; i < n; i++) {
+            int x = prices[i];
+            f[i][0][0] = f[i - 1][0][0];
+            f[i][0][1] = Math.max(f[i - 1][0][1], f[i - 1][0][0] - x);
+            for (int j = 1; j <= k; j++) {
+                f[i][j][0] = Math.max(f[i - 1][j][0], f[i - 1][j - 1][1] + x);
+                f[i][j][1] = Math.max(f[i - 1][j][1], f[i - 1][j][0] - x);
             }
         }
         return f[n - 1][k][0];

@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-public class No74 {
+class No74 {
 
     // 2次二分
     public boolean searchMatrix1(int[][] matrix, int target) {

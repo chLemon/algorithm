@@ -3,7 +3,7 @@ package _solution.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No442 {
+class No442 {
 
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> res = new ArrayList<>();

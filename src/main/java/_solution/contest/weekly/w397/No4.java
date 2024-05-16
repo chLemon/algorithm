@@ -1,9 +1,8 @@
 package _solution.contest.weekly.w397;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class No4 {
+class No4 {
 
     boolean[] used;
     int[] nums;

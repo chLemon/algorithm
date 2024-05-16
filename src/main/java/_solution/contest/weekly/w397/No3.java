@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class No3 {
+class No3 {
     public static void main(String[] args) {
         System.out.println(new No3().maxScore(Arrays.asList(
                 Arrays.asList(9, 5, 7, 3),

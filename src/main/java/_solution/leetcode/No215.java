@@ -2,7 +2,7 @@ package _solution.leetcode;
 
 import java.util.Random;
 
-public class No215 {
+class No215 {
     public static void main(String[] args) {
         System.out.println(new No215().findKthLargest(new int[]{6, 2, 1, 5, 3, 4}, 2));
     }
@@ -13,7 +13,7 @@ public class No215 {
 
     // 直接建堆，O(n) 但是选k个，k * logn
 
-    // 快排变种 k-select 期望O(n)
+    // 快排quicksort 变种 k-select 期望O(n)
     public int findKthLargest(int[] nums, int k) {
         this.nums = nums;
         this.n = nums.length;

@@ -5,7 +5,7 @@ import domain.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class No662 {
+class No662 {
 
     public int widthOfBinaryTree(TreeNode root) {
         int maxWidth = 0;

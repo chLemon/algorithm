@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-public class No43 {
+class No43 {
 
     int[] res;
     int[] n1;

@@ -3,7 +3,7 @@ package _solution.leetcode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class No227 {
+class No227 {
 
     public static void main(String[] args) {
         System.out.println(new No227().calculate(" 1-1+1 "));

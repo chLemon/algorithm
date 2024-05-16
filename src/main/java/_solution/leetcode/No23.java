@@ -4,7 +4,7 @@ import domain.ListNode;
 
 import java.util.PriorityQueue;
 
-public class No23 {
+class No23 {
 
     public ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);

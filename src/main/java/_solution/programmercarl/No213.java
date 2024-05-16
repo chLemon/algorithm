@@ -1,6 +1,6 @@
 package _solution.programmercarl;
 
-public class No213 {
+class No213 {
 
     public int rob(int[] nums) {
         // 偷第一个房子,则第二个和最后一个不能偷

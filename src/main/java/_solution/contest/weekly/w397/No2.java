@@ -2,7 +2,7 @@ package _solution.contest.weekly.w397;
 
 import java.util.Arrays;
 
-public class No2 {
+class No2 {
 
     public int maximumEnergy(int[] energy, int k) {
         int n = energy.length;

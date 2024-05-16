@@ -1,6 +1,6 @@
 package _solution.programmercarl;
 
-public class No42 {
+class No42 {
 
     public int trap(int[] height) {
         int n = height.length;

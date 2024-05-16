@@ -2,7 +2,7 @@ package _solution.contest.biweekly.w130;
 
 import java.util.*;
 
-public class No2 {
+class No2 {
 
     public static void main(String[] args) {
         System.out.println(new No2().maxPointsInsideSquare(new int[][]{

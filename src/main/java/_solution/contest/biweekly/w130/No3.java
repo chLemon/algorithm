@@ -2,7 +2,7 @@ package _solution.contest.biweekly.w130;
 
 import java.util.Arrays;
 
-public class No3 {
+class No3 {
 
     String s;
     int[] cache;

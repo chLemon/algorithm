@@ -2,7 +2,7 @@ package _solution.contest.weekly.w397;
 
 import java.util.Arrays;
 
-public class No1 {
+class No1 {
     public static void main(String[] args) {
         new No1().findPermutationDifference("rwohu",
                 "rwuoh");

@@ -1,6 +1,6 @@
 package _solution.leetcode;
 
-public class No88 {
+class No88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p1 = m - 1, p2 = n - 1, p = m + n - 1;
         while (p2 >= 0) { // nums2 还有要合并的元素

@@ -1,6 +1,6 @@
 package _solution.base;
 
-public class Sort {
+class Sort {
 
 
     public static void sort(int[] array, int low, int high) {

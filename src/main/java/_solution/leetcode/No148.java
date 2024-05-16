@@ -2,7 +2,7 @@ package _solution.leetcode;
 
 import domain.ListNode;
 
-public class No148 {
+class No148 {
 
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head;

@@ -6,8 +6,9 @@ public class Test {
 
     @org.junit.jupiter.api.Test
     public void test() {
-        char[] res = new char[2];
-        System.out.println(new String(res, 0, 2));
+        int a = Integer.MAX_VALUE;
+        System.out.println(a + 1 > Integer.MAX_VALUE - 2);
+        System.out.println(a + 1 >= Integer.MAX_VALUE - 1);
     }
 
 }

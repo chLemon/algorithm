@@ -2,13 +2,31 @@ package temp;
 
 public class Test {
 
-    char c;
+    public static void main(String[] args) throws InterruptedException {
+        new Test().test();
+    }
 
-    @org.junit.jupiter.api.Test
-    public void test() {
-        int a = Integer.MAX_VALUE;
-        System.out.println(a + 1 > Integer.MAX_VALUE - 2);
-        System.out.println(a + 1 >= Integer.MAX_VALUE - 1);
+    public void test() throws InterruptedException {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.println("JVM is shutting down");
+        }));
+        Runnable runnable = () -> {
+            try {
+                int count = 0;
+                while (Thread.currentThread().isAlive()) {
+                    System.out.println(count++);
+                }
+            } finally {
+                System.out.println("守护线程中断后1");
+            }
+            System.out.println("守护线程中断后2");
+        };
+
+        Thread thread = new Thread(runnable);
+        thread.setDaemon(true);
+        thread.start();
+        Thread.sleep(1);
+        System.out.println("main线程结束");
     }
 
 }

@@ -18,9 +18,11 @@ class No215 {
         this.nums = nums;
         this.n = nums.length;
 
+        // 第k大的下标为 n - k
         return partition(0, n - 1, n - k);
     }
 
+    // partition 语义: 让 轴点归位。即 轴点下标为已排序好的 
     private int partition(int l, int r, int k) {
         if (l == r) return nums[l];
         // 从 l - r 里随机选一个，作为轴点

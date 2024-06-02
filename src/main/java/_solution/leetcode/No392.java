@@ -16,24 +16,35 @@ class No392 {
         return si == s.length();
     }
 
+    // 思考题
     public boolean isSubsequence2(String s, String t) {
-        int length1 = s.length();
-        int length2 = t.length();
-        int[][] dp = new int[length1 + 1][length2 + 1];
-        for (int i = 1; i <= length1; i++) {
-            for (int j = 1; j <= length2; j++) {
-                if (s.charAt(i - 1) == t.charAt(j - 1)) {
-                    dp[i][j] = dp[i - 1][j - 1] + 1;
+        // 制作一个表
+        int m = t.length();
+        // 从位置 i 开始，下一个字母出现的位置
+        int[][] f = new int[m + 1][26];
+        for (int i = 0; i < 26; i++) {
+            f[m][i] = -1;   // 最后一个位置，-1表示非法
+        }
+        for (int i = m - 1; i >= 0; i--) {
+            int tc = t.charAt(i) - 'a';
+            for (int j = 0; j < 26; j++) {
+                if (j == tc) {
+                    f[i][j] = i;
                 } else {
-                    dp[i][j] = dp[i][j - 1];
+                    f[i][j] = f[i + 1][j];
                 }
             }
         }
-        if (dp[length1][length2] == length1) {
-            return true;
-        } else {
-            return false;
+
+        // 判断
+        int tIndex = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int sc = s.charAt(i) - 'a';
+            int nextMatchIndex = f[tIndex][sc];
+            if (nextMatchIndex == -1) return false;
+            tIndex = nextMatchIndex + 1;
         }
+        return true;
     }
 
 }

@@ -1,4 +1,4 @@
-package acm_template;
+package template.acm_template;
 
 import java.io.BufferedReader;
 import java.io.IOException;

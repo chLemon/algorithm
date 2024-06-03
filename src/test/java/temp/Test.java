@@ -1,7 +1,5 @@
 package temp;
 
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-
 public class Test implements Runnable {
 
     static Test instance = new Test();
@@ -12,8 +10,6 @@ public class Test implements Runnable {
         t1.start();
         t2.start();
     }
-
-    AbstractQueuedSynchronizer
 
     @Override
     public void run() {

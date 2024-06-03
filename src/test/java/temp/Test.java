@@ -1,56 +1,31 @@
 package temp;
 
-import java.util.Random;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
-public class Test {
+public class Test implements Runnable {
 
-    Random random = new Random(System.currentTimeMillis());
-    int[] nums;
+    static Test instance = new Test();
 
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println(new Test().findKthLargest(new int[]{3, 2, 1, 5, 6, 4}, 2));
+    public static void main(String[] args) {
+        Thread t1 = new Thread(instance);
+        Thread t2 = new Thread(instance);
+        t1.start();
+        t2.start();
     }
 
-    public int findKthLargest(int[] nums, int k) {
-        this.nums = nums;
-        int n = nums.length;
-        // 第k大的下标为 n - k
-        return partition(0, n, n - k);
-    }
+    AbstractQueuedSynchronizer
 
-    /**
-     * @return res
-     * @param: [)
-     */
-    private int partition(int left, int right, int k) {
-        if (left + 1 == right) return nums[left];
-        int r = random.nextInt(right - left);
-        swap(left, r + left);
-
-        int x = nums[left];
-        int m = left;
-        // L G U
-        // L : (left, m]
-        // G : (m, i)
-        // U : [i, right)
-        for (int i = left + 1; i < right; i++) {
-            if (nums[i] < x) {
-                swap(++m, i);
+    @Override
+    public void run() {
+        // 同步代码块形式——锁为this,两个线程使用的锁是一样的,线程1必须要等到线程0释放了该锁后，才能执行
+        synchronized (this) {
+            System.out.println("我是线程" + Thread.currentThread().getName());
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            System.out.println(Thread.currentThread().getName() + "结束");
         }
-        swap(left, m);
-        // m 归位
-        if (m == k) return nums[m];
-        if (m < k) {
-            return partition(left, m, k);
-        }
-        return partition(m + 1, right, k);
-    }
-
-
-    private void swap(int a, int b) {
-        int t = nums[a];
-        nums[a] = nums[b];
-        nums[b] = t;
     }
 }

@@ -1,21 +1,25 @@
 package _solution.leetcode;
 
 class No50 {
+    public static void main(String[] args) {
+        System.out.println(new No50().myPow(2.0, -2147483648));
+    }
+
     public double myPow(double x, int n) {
-        if (n == 0 || x == 0) {
-            return 1;
-        }
-        if (n == 1) {
-            return x;
+        if (x == 0) return 0;
+        double res = 1;
+        long b = n; // 因为n有 Integer.MIN_VALUE，直接取反，会溢出
+        if (n < 0) {
+            x = 1 / x;
+            b = -b; // 这里也必须是-b，不能用-n
         }
 
-        if (n == 2) {
-            return x * x;
+        while (b > 0) {
+            if ((b & 1) == 1) res *= x;
+            x *= x;
+            b >>= 1;
         }
-        if (n < 0) {
-            return 1 / x / myPow(x, -n - 1);
-        }
-        double temp = myPow(x, n / 2);
-        return (n & 1) == 0 ? temp * temp : temp * temp * x;
+        return res;
     }
+
 }

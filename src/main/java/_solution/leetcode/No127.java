@@ -111,7 +111,7 @@ class No127 {
                 // 枚举将 i 替换成哪个小写字母
                 for (int j = 0; j < 26; j++) {
                     // 替换后的字符串
-                    String sub = poll.substring(0, i) + String.valueOf((char) ('a' + j)) + poll.substring(i + 1);
+                    String sub = poll.substring(0, i) + (char) ('a' + j) + poll.substring(i + 1);
                     if (set.contains(sub)) {
                         // 如果该字符串在「当前方向」被记录过（拓展过），跳过即可
                         if (cur.containsKey(sub) && cur.get(sub) <= cur.get(poll) + 1) continue;

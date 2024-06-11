@@ -2,7 +2,6 @@ package _solution.codetop;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -13,7 +12,12 @@ class Support {
 
     public static void main(String[] args) throws Exception {
         lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要二刷的题目.md"));
-        Collections.sort(lines);
+        lines.removeIf(a -> a.equals("```"));
+        lines.sort((a, b) -> {
+            String a1 = a.split("\\.")[0];
+            String b1 = b.split("\\.")[0];
+            return Integer.compare(Integer.valueOf(a1), Integer.valueOf(b1));
+        });
         for (String line : lines) {
             System.out.println(line);
         }

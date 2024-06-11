@@ -2,6 +2,7 @@ package _solution.codetop;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -11,10 +12,11 @@ class Support {
     static List<String> lines;
 
     public static void main(String[] args) throws Exception {
-        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/3个月内后端热题.md"));
-
-        System.out.println("目前已经做了: " + count() + " 道题");
-        System.out.println("目前来看，还需要做 " + resolveHot100() + " 道题");
+        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要二刷的题目.md"));
+        Collections.sort(lines);
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 
 

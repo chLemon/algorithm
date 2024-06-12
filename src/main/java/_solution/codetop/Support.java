@@ -18,6 +18,7 @@ class Support {
             String b1 = b.split("\\.")[0];
             return Integer.compare(Integer.valueOf(a1), Integer.valueOf(b1));
         });
+        System.out.println("合计：" + lines.size());
         for (String line : lines) {
             System.out.println(line);
         }

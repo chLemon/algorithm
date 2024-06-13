@@ -1,6 +1,6 @@
-package _solution.base;
+package template;
 
-class Sort {
+class QuickSort {
 
 
     public static void sort(int[] array, int low, int high) {

@@ -29,7 +29,10 @@ class No215 {
 //        int candidateIndex = l + random.nextInt(r - l + 1);
 //        swap(l, candidateIndex);
 
-        // LGU
+        // L G U
+        // L : (left, m]
+        // G : (m, i)
+        // U : [i, right)
         int x = nums[l];
         int m = l;
         for (int i = l + 1; i <= r; i++) {

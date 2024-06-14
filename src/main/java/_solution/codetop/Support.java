@@ -11,8 +11,8 @@ class Support {
     static List<String> lines;
 
     public static void main(String[] args) throws Exception {
-        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要二刷的题目.md"));
-        lines.removeIf(a -> a.equals("```"));
+        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要三刷的题目.md"));
+        lines.removeIf(a -> a.contains("```"));
         lines.sort((a, b) -> {
             String a1 = a.split("\\.")[0];
             String b1 = b.split("\\.")[0];

@@ -1,31 +1,46 @@
 package _solution.codetop;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 class Support {
 
     static List<String> lines;
 
-    public static void main(String[] args) throws Exception {
-        //        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要二刷的题目.md"));
-        lines = Files.readAllLines(Paths.get("D:\\JavaProject\\algorithm\\src\\main\\java\\_solution\\codetop\\需要二刷的题目.md"));
-        lines.removeIf(a -> a.contains("```"));
-        lines.sort((a, b) -> {
-            String a1 = a.split("\\.")[0];
-            String b1 = b.split("\\.")[0];
-            return Integer.compare(Integer.valueOf(a1), Integer.valueOf(b1));
-        });
-        for (String line : lines) {
-            System.out.println(line);
-        }
-        System.out.println("合计：" + lines.size());
+    public static void main(String[] args) throws IOException {
+        random2Problems();
     }
 
+//    public static void main(String[] args) throws Exception {
+//        //        lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/需要二刷的题目.md"));
+//        lines = Files.readAllLines(Paths.get("D:\\JavaProject\\algorithm\\src\\main\\java\\_solution\\codetop\\需要二刷的题目.md"));
+//        lines.removeIf(a -> a.contains("```"));
+//        lines.sort((a, b) -> {
+//            String a1 = a.split("\\.")[0];
+//            String b1 = b.split("\\.")[0];
+//            return Integer.compare(Integer.valueOf(a1), Integer.valueOf(b1));
+//        });
+//        for (String line : lines) {
+//            System.out.println(line);
+//        }
+//        System.out.println("合计：" + lines.size());
+//    }
 
+
+    private static void random2Problems() throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/Classic150.md"));
+        lines.removeIf(String::isEmpty);
+        List<String> list = Arrays.asList("简单", "中等", "困难");
+        lines.removeIf(list::contains);
+        System.out.println(lines.size());
+        Random random = new Random(System.currentTimeMillis());
+        int i = random.nextInt(lines.size());
+        System.out.println(lines.get(i));
+        int j = random.nextInt(lines.size());
+        System.out.println(lines.get(j));
+    }
     private static int count() {
         int count = 0;
         for (String line : lines) {

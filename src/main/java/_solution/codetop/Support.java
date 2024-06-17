@@ -34,7 +34,6 @@ class Support {
         lines.removeIf(String::isEmpty);
         List<String> list = Arrays.asList("简单", "中等", "困难");
         lines.removeIf(list::contains);
-        System.out.println(lines.size());
         Random random = new Random(System.currentTimeMillis());
         int i = random.nextInt(lines.size());
         System.out.println(lines.get(i));

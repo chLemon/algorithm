@@ -7,19 +7,24 @@ import java.util.*;
 
 class Support {
 
+    static Random random = new Random(System.currentTimeMillis());
+    
     public static void main(String[] args) throws IOException {
         random2Problems();
 
         System.out.println();
         System.out.println();
 
-        System.out.println(getAllMediums());
+        List<String> mediums = getAllMediums();
+        int i = random.nextInt(mediums.size());
+        System.out.println(mediums.get(i));
+        int j = random.nextInt(mediums.size());
+        System.out.println(mediums.get(j));
     }
 
     private static void random2Problems() throws IOException {
         Map<String, String> problems = readAllProblems();
         List<String> problemList = new ArrayList<>(problems.keySet());
-        Random random = new Random(System.currentTimeMillis());
         int i = random.nextInt(problemList.size());
         System.out.println(problemList.get(i));
         int j = random.nextInt(problemList.size());

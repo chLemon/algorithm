@@ -1,4 +1,4 @@
-package _solution.codetop;
+package codetop;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -32,7 +32,7 @@ class Support {
     }
 
     private static Map<String, String> readAllProblems() throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/_solution/codetop/Classic150.md"));
+        List<String> lines = Files.readAllLines(Paths.get("/Users/chen/PersonalGit/algorithm/src/main/java/codetop/Classic150.md"));
         lines.removeIf(String::isEmpty);
         Map<String, String> problem2Difficulty = new HashMap<>();
         for (int i = 0; i < lines.size(); i += 2) {

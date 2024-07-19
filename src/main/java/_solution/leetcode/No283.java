@@ -2,21 +2,29 @@ package _solution.leetcode;
 
 class No283 {
 
-    // 这个题用for写更清晰
+    /*
+    summary:
+    简单
+    hot100
+
+    思路：
+    双指针，一个遍历，一个指向非0部分的末尾
+
+    复杂度:
+    时间 O(n)
+    空间 O(1)
+     */
+
     public void moveZeroes(int[] nums) {
-        int fill = 0;
-        int move = 0;
-        while (move < nums.length) {
-            while (move < nums.length && nums[move] == 0) {
-                move++;
+        int n = nums.length;
+        int noneZero = 0;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != 0) {
+                nums[noneZero++] = nums[i];
             }
-            if (move >= nums.length) break;
-            if (move != fill) nums[fill] = nums[move];
-            fill++;
-            move++;
         }
-        while (fill < nums.length) {
-            nums[fill++] = 0;
+        for (; noneZero < n; noneZero++) {
+            nums[noneZero] = 0;
         }
     }
 

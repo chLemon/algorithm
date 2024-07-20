@@ -5,6 +5,18 @@ import java.util.Map;
 
 class No3 {
 
+    /*
+    summary:
+    中等
+    hot100
+
+    思路:
+    滑动窗口
+
+    复杂度:
+    时间 O(n)
+    空间 O(128)
+    */
 	public int lengthOfLongestSubstring(String s) {
 		int i = 0, j = 0, max = 0;
 		Map<Character, Integer> map = new HashMap<>();

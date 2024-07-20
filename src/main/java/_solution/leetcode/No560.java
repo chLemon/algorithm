@@ -5,6 +5,19 @@ import java.util.Map;
 
 class No560 {
 
+    /*
+    summary:
+    中等
+    hot100
+
+    思路:
+    前缀和
+    先判断是否存在答案，再将当前前缀和加入map
+
+    复杂度:
+    时间 O(n)
+    空间 O(1)
+     */
     public static void main(String[] args) {
         System.out.println(new No560().subarraySum(new int[]{1, 1, 1}, 2));
     }

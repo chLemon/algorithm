@@ -2,6 +2,10 @@ package _solution.leetcode;
 
 class No76 {
 
+    /*
+
+     */
+
     public static void main(String[] args) {
         No76 no = new No76();
         no.minWindow("a", "aa");

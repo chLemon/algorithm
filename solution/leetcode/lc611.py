@@ -1,3 +1,6 @@
+# https://leetcode.cn/problems/valid-triangle-number/description/
+# O(n^2) O(1)
+# 枚举最长边+相向双指针
 class Solution:
     def triangleNumber(self, nums: List[int]) -> int:
         nums.sort()

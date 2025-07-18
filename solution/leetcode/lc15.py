@@ -1,4 +1,6 @@
 # https://leetcode.cn/problems/3sum/description/
+# O(n^2) O(1)
+# 相向双指针
 from typing import List
 
 

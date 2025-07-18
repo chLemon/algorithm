@@ -1,4 +1,6 @@
 # https://leetcode.cn/problems/count-pairs-whose-sum-is-less-than-target/
+# O(nlogn) O(1)
+# 相向双指针
 class Solution:
     def countPairs(self, nums: List[int], target: int) -> int:
         nums.sort()

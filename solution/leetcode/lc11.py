@@ -1,4 +1,6 @@
 # https://leetcode.cn/problems/container-with-most-water/description/
+# O(n) O(1)
+# 相向双指针
 
 
 class Solution:

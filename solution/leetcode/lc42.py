@@ -1,3 +1,7 @@
+# https://leetcode.cn/problems/trapping-rain-water/description/
+# O(n) O(1)
+# 相向双指针
+
 class Solution:
     def trap1(self, height: List[int]) -> int:
         # 每一块位置能接到的雨水，可以看作是两块木板挡下的，左侧木板是左侧最高的值，这个值可以算上当前值，右侧同理

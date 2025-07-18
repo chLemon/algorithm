@@ -1,3 +1,6 @@
+# https://leetcode.cn/problems/4sum/description/
+# O(n^3) O(1)
+# 相向双指针
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()

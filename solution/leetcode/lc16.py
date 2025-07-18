@@ -1,4 +1,6 @@
 # https://leetcode.cn/problems/3sum-closest/description/
+# O(n^2) O(1)
+# 相向双指针
 from math import inf
 from typing import List
 

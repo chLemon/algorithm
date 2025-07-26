@@ -8,8 +8,8 @@ class Solution:
             return 0
         left = ans = 0
         prod = 1
-        for right, i in enumerate(nums):
-            prod *= i
+        for right, x in enumerate(nums):
+            prod *= x
             while prod >= k:
                 prod //= nums[left]
                 left += 1

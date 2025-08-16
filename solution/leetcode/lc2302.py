@@ -14,5 +14,3 @@ class Solution:
                 left += 1
             ans += right - left + 1
         return ans
-
-Solution().countSubarrays([1,1,1], 5)

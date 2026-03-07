@@ -1,5 +1,5 @@
 # 题目链接: https://leetcode.cn/problems/letter-combinations-of-a-phone-number/
-# 时空复杂度: O(n * 4^n) O(n_)
+# 时空复杂度: O(n * 4^n) O(n)
 # Tags: 回溯，只在最后加入答案的回溯，可以直接覆盖，不恢复现场
 
 MAPPING = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]

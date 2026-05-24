@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}复习进度 - 温故而知新{% endblock %}
+
+{% block content %}
+<h1>复习进度</h1>
+
+<div class="card">
+    <div style="display: flex; gap: 3rem;">
+        <div>
+            <div class="stat">{{ done }}</div>
+            <div class="stat-label">已复习</div>
+        </div>
+        <div>
+            <div class="stat">{{ total }}</div>
+            <div class="stat-label">总题数</div>
+        </div>
+        <div>
+            <div class="stat">{{ "%.0f"|format(done / total * 100 if total else 0) }}%</div>
+            <div class="stat-label">完成率</div>
+        </div>
+    </div>
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: {{ (done / total * 100) if total else 0 }}%"></div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>已复习的题目</h2>
+    {% for rel_path, info in reviewed.items() %}
+    <p>
+        <strong>{{ rel_path }}</strong>
+        <span style="color: #7f8c8d; margin-left: 1rem;">{{ info.count }} 次 · {{ info.last_reviewed }}</span>
+    </p>
+    {% else %}
+    <p>还没有复习过任何题目，快去开始吧！</p>
+    {% endfor %}
+</div>
+
+<div class="card">
+    <h2>未复习的题目 ({{ total - done }})</h2>
+    {% for q in questions %}
+        {% if q.rel_path not in reviewed %}
+        <p>{{ q.rel_path }}
+            {% for tag in q.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </p>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

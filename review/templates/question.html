@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ q.rel_path }} - 温故而知新{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>{{ q.rel_path }}</h2>
+
+    <p><a href="{{ q.web_link }}" target="_blank">打开 LeetCode 题目</a></p>
+
+    {% if reviewed_info %}
+    <p style="color: #27ae60;">已复习 {{ reviewed_info.count }} 次，上次：{{ reviewed_info.last_reviewed }}</p>
+    {% endif %}
+
+    <div class="reveal-btn">
+        <button class="btn btn-secondary" onclick="document.getElementById('tags').classList.remove('hidden'); this.style.display='none'">看看标签</button>
+    </div>
+    <div id="tags" class="hidden">
+        <p><strong>标签：</strong>
+            {% for tag in q.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </p>
+    </div>
+
+    <div class="reveal-btn">
+        <button class="btn btn-secondary" onclick="document.getElementById('hints').classList.remove('hidden'); this.style.display='none'">看看提示</button>
+    </div>
+    <div id="hints" class="hidden">
+        <p><strong>时空复杂度：</strong>{{ q.complexity }}</p>
+    </div>
+
+    <div class="reveal-btn">
+        <button class="btn btn-secondary" onclick="document.getElementById('code').classList.remove('hidden'); this.style.display='none'">查看代码</button>
+    </div>
+    <div id="code" class="hidden">
+        <pre><code>{{ q.code }}</code></pre>
+    </div>
+
+    <div style="margin-top: 2rem;">
+        <button class="btn btn-primary" onclick="markDone('{{ q.rel_path }}')">标记已复习</button>
+        <span id="done-msg" style="margin-left: 1rem; color: #27ae60; display: none;">已记录</span>
+    </div>
+</div>
+
+<a href="/" class="btn btn-secondary">返回今日题目</a>
+
+<script>
+function markDone(path) {
+    fetch('/api/complete/' + encodeURIComponent(path), {method: 'POST'})
+        .then(r => r.json())
+        .then(() => {
+            document.getElementById('done-msg').style.display = 'inline';
+        });
+}
+</script>
+{% endblock %}

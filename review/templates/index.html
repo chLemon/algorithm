@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}今日题目 - 温故而知新{% endblock %}
+
+{% block content %}
+<h1>今日复习</h1>
+
+<div class="card">
+    <h2>回忆题</h2>
+    {% if q1.title %}
+    <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">{{ q1.title }}
+        {% if q1.difficulty %}
+        <span class="difficulty difficulty-{{ q1.difficulty|lower }}">{{ q1.difficulty }}</span>
+        {% endif %}
+    </p>
+    {% endif %}
+    {% if q1.description %}
+    <p style="color: #555; margin-bottom: 0.5rem;">{{ q1.description }}</p>
+    {% endif %}
+    <p><strong>标签：</strong>
+        {% for tag in q1.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </p>
+    <a href="/question/{{ q1.rel_path }}" class="btn btn-primary">开始回忆</a>
+    {% if q1.rel_path in reviewed %}
+    <span style="margin-left: 1rem; color: #27ae60;">已复习 {{ reviewed[q1.rel_path].count }} 次</span>
+    {% endif %}
+</div>
+
+<div class="card">
+    <h2>动手题</h2>
+    {% if q2.title %}
+    <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">{{ q2.title }}
+        {% if q2.difficulty %}
+        <span class="difficulty difficulty-{{ q2.difficulty|lower }}">{{ q2.difficulty }}</span>
+        {% endif %}
+    </p>
+    {% endif %}
+    {% if q2.description %}
+    <p style="color: #555; margin-bottom: 0.5rem;">{{ q2.description }}</p>
+    {% endif %}
+    <p><strong>标签：</strong>
+        {% for tag in q2.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </p>
+    <a href="/question/{{ q2.rel_path }}" class="btn btn-primary">开始做题</a>
+    {% if q2.rel_path in reviewed %}
+    <span style="margin-left: 1rem; color: #27ae60;">已复习 {{ reviewed[q2.rel_path].count }} 次</span>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "remove-nth-node-from-end-of-list": {
+    "title": "删除链表的倒数第 N 个结点",
+    "difficulty": "Medium",
+    "description": "给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。\n\n \n\n示例 1：\n\n\n输入：head = [1,2,3,4,5], n = 2\n输出：[1,2,3,5]\n\n\n示例 2：\n\n\n输入：head = [1], n = 1\n输出：[]\n\n\n示例 3：\n\n\n输入：head = [1,2], n = 1\n输出：[1]\n\n\n \n\n提示：\n\n\n\t链表中结点的数目为 sz\n\t1 <= sz <..."
+  },
+  "maximum-beauty-of-an-array-after-applying-operation": {
+    "title": "数组的最大美丽值",
+    "difficulty": "Medium",
+    "description": "给你一个下标从 0 开始的整数数组 nums 和一个 非负 整数 k 。\n\n在一步操作中，你可以执行下述指令：\n\n\n\t在范围 [0, nums.length - 1] 中选择一个 此前没有选过 的下标 i 。\n\t将 nums[i] 替换为范围 [nums[i] - k, nums[i] + k] 内的任一整数。\n\n\n数组的 美丽值 定义为数组中由相等元素组成的最长子序列的长度。\n\n对数组 nums..."
+  }
+}
